@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimal-ui, initial-scale=1.0, minimum-scale=1.0, 
+    maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Wahl x Weise</title>
+
+    <link rel="icon" href="/favicon5.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/content-pages.css">
+
+    <style>
+        :root {
+            --gradient-color-3: #FEDF8F;
+            --gradient-color-4: #faaa69;
+            --gradient-color-2: #edb4ee;
+            --gradient-color-1: #ee8eb9;
+        }
+
+        #gradient-canvas-origins {
+            --gradient-color-3: #FEDF8F;
+            --gradient-color-4: #faaa69;
+            --gradient-color-2: #edb4ee;
+            --gradient-color-1: #D9659A;
+
+
+            height: 85vh;
+            width: 100vw;
+            position: absolute;
+            top: 0;
+        }
+
+        .radial-gradient-container div:nth-child(1) {
+            height: 94%;
+            width: 88%;
+            background-color: var(--gradient-color-4);
+            left: -29%;
+            top: 21%;
+        }
+
+        .radial-gradient-container div:nth-child(2) {
+            height: 60%;
+            width: 52%;
+            background-color: var(--gradient-color-2);
+            left: 60%;
+            top: 32%;
+            animation-delay: 8s;
+        }
+
+        .radial-gradient-container div:nth-child(3) {
+            height: 54%;
+            width: 77%;
+            background-color: var(--gradient-color-3);
+            left: 41%;
+            top: -1%;
+            animation-delay: 0.3s;
+        }
+
+        .radial-gradient-container div:nth-child(4) {
+            height: 80%;
+            width: 53%;
+            background-color: var(--gradient-color-1);
+            left: -10%;
+            top: -18%;
+            animation-delay: 5.2s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar nav-hidden">
+        <ul class="nav-list">
+
+            <li class="dropdown">
+                <a href="grundlagen.html" class="dropbtn active">Grundlagen</a>
+                <div class="dropdown-content">
+                    <a href="./grundlagen.html#Beduerfnisse">Bedürfnisse</a> <br>
+                    <a href="./grundlagen.html#Werte">Werte</a>
+                </div>
+            </li>
+
+            <li class="dropdown">
+                <a href="ursachen.html" class="dropbtn">Ursachen</a>
+                <div class="dropdown-content">
+                    <a href="./ursachen.html#Entscheidungsmuedigkeit">Entscheidungsmüdigkeit</a> <br>
+                    <a href="./ursachen.html#Auswahlparadox">Auswahlparadox</a><br>
+                    <a href="./ursachen.html#Kognitive Verzerrungen">Kognitive Verzerrungen</a><br>
+                    <a href="./ursachen.html#Planungs Paralyse">Planungs Paralyse</a><br>
+                </div>
+            </li>
+
+
+            <li class="title titleDesktop"><a href="startseite.html">
+                    <lottie-interactive path="./json/logo3.json" interaction="morph"></lottie-interactive>
+                </a></li>
+            <li class="title titleTablett"><a href="startseite.html">Wahl x Weise</a></li>
+
+            <li class="dropdown">
+                <a href="methoden.html" class="dropbtn">5 Methoden</a>
+                <div class="dropdown-content">
+                    <a href="./methoden.html#6 Huete Methode">6 Hüte Methode</a> <br>
+                    <a href="./methoden.html#10 / 10 / 10">10 / 10 / 10</a><br>
+                    <a href="./methoden.html#Pro-Kontra-Liste">Pro-Kontra-Liste</a><br>
+                    <a href="./methoden.html#ICE-Scoring-Model">ICE-Scoring-Model</a><br>
+                    <a href="./methoden.html#Ausschlussverfahren">Ausschlussverfahren</a><br>
+                </div>
+            </li>
+
+            <li class="dropdown">
+                <a href="tipps.html" class="dropbtn">Tipps & Tricks</a>
+                <div class="dropdown-content">
+                    <a href="./tipps.html#40-70 Regel">40-70 Regel</a><br>
+                    <a href="./tipps.html#Satisficing">Satisficing</a><br>
+                    <a href="./tipps.html#Eat the Frog">Eat the Frog</a><br>
+                    <a href="./tipps.html#Gewohnheiten">Gewohnheiten</a><br>
+                    <a href="./tipps.html#Vorsaetze">Vorsätze</a><br>
+                </div>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <div class="mobile-header">
+        <div class="title"><a href="startseite.html">Wahl x Weise</a></div>
+
+        <button class="hamburger">
+            <div class="ham-bar"></div>
+        </button>
+    </div>
+
+    <div class="mobile-nav">
+
+        <div class="mobile-navWrapper">
+            <div class="hamburger-content">
+                <a href="startseite.html" class="menu-item">home</a>
+
+                <div class="dropdown">
+                    <div class="mobile-nav-row">
+                        <a href="grundlagen.html" class="menu-item">Grundlagen</a>
+                        <img class="mobile-nav-arrow" src="assets/arrow-head.svg" alt="Icon">
+                    </div>
+                    <div class="dropdownOptions">
+                        <ul>
+                            <a href="./grundlagen.html#Beduerfnisse">Bedürfnisse</a>
+                            <a href="./grundlagen.html#Werte">Werte</a>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <div class="mobile-nav-row">
+                        <a href="ursachen.html" class="menu-item">Ursachen</a>
+                        <img class="mobile-nav-arrow" src="assets/arrow-head.svg" alt="Icon">
+                    </div>
+                    <div class="dropdownOptions">
+                        <ul>
+                            <a href="./ursachen.html#Entscheidungsmuedigkeit">Entscheidungsmüdigkeit</a>
+                            <a href="./ursachen.html#Auswahlparadox">Auswahlparadox</a>
+                            <a href="./ursachen.html#Kognitive Verzerrungen">Kognitive Verzerrungen</a>
+                            <a href="./ursachen.html#Planungs Paralyse">Planungs Paralyse</a>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <div class="mobile-nav-row">
+                        <a href="methoden.html" class="menu-item">5 Methoden</a>
+                        <img class="mobile-nav-arrow" src="assets/arrow-head.svg" alt="Icon">
+                    </div>
+                    <div class="dropdownOptions">
+                        <ul>
+                            <a href="./methoden.html#6 Huete Methode">6 Hüte Methode</a>
+                            <a href="./methoden.html#10 / 10 / 10">10 / 10 / 10</a>
+                            <a href="./methoden.html#Pro-Kontra-Liste">Pro-Kontra-Liste</a>
+                            <a href="./methoden.html#ICE-Scoring-Model">ICE-Scoring-Model</a>
+                            <a href="./methoden.html#Ausschlussverfahren">Ausschlussverfahren</a>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <div class="mobile-nav-row">
+                        <a href="tipps.html" class="menu-item">Tipps und Tricks</a>
+                        <img class="mobile-nav-arrow" src="assets/arrow-head.svg" alt="Icon">
+                    </div>
+                    <div class="dropdownOptions">
+                        <ul>
+                            <a href="./tipps.html#40-70 Regel">40-70 Regel</a>
+                            <a href="./tipps.html#Satisficing">Satisficing</a>
+                            <a href="./tipps.html#Eat the Frog">Eat the Frog</a>
+                            <a href="./tipps.html#Gewohnheiten">Gewohnheiten</a>
+                            <a href="./tipps.html#Vorsaetze">Vorsätze</a>
+                        </ul>
+                    </div>
+                </div>
+
+                <a href="index.html" class="menu-item">Fragerunde</a>
+            </div>
+        </div>
+
+
+        <canvas id="gradient-canvas3"> </canvas>
+    </div>
+
+    <div class="up-button">
+        <img src="assets/arrow-up-smol.svg" alt="Icon">
+    </div>
+
+    <section class="hero-banner scroll-section" id="section1">
+        <canvas id="gradient-canvas-origins" data-transition-in> </canvas>
+        <div class="hero-content scroll" data-rate=".2" data-direction="vertical">
+            <h1>Auf welchen Grundlagen treffen wir Entscheidungen?</h1>
+            <p>Erfahre mehr darüber, wie wir Entscheidungen treffen und welche unterbewussten Faktoren uns dabei
+                beeinflussen.
+                Unser Ziel ist es, ein tieferes Bewusstsein für diese Einflüsse zu erlangen.
+            </p>
+
+        </div>
+        <div><img onclick="scrollToSection('section2')" class="arrow" src="/assets/arrow-down-long.svg"></div>
+    </section>
+
+    <div class="content" id="section2">
+
+        <div class="nav-box-container sticky">
+
+            <div class="vertical-buffer"></div>
+            <nav class="nav-box hidden">
+                <a class="nav-box-link fs-16 active" onclick="func(0); scrollToSection('section2')"
+                    href="#Beduerfnisse">Bedürfnisse</a>
+                <a class="nav-box-link fs-16" onclick="func(1); scrollToSection('section2')" href="#Werte">Werte</a>
+            </nav>
+
+            <nav class="nav-box mobile">
+                <a class="nav-box-link fs-14 active" onclick="func(0); scrollToSection('section2')"
+                    href="#Beduerfnisse">Bedürfnisse</a>
+                <a class="nav-box-link fs-14" onclick="func(1); scrollToSection('section2')" href="#Werte">Werte</a>
+            </nav>
+        </div>
+
+        <div class="all-articles">
+            <section class="article-container" id="article-container-0">
+                <div class="article">
+                    <div class="inner-content sticky article-headline">
+                        <h2>Wie beeinflussen Bedürfnisse Entscheidungen?</h2>
+                    </div>
+
+                    <div class="buffer"></div>
+
+                    <div class="inner-content text">
+                        <p class="absatz">Bei jeder Entscheidung spielt die dahinterliegende Motivation eine wichtige
+                            Rolle. Diese unterscheidet sich bei jedem Menschen stark, oft ohne dass wir es bewusst
+                            merken.
+                            Vieles, was unsere Entscheidungen und Handlungen beeinflusst, sind unbewusste Bedürfnisse
+                            und Wünsche,
+                            welche wir oft als unser „Bauchgefühl“ wahrnehmen. Diese unbewussten Bedürfnisse variieren
+                            bei jedem Individuum und beeinflussen schließlich
+                            unsere tagtäglichen Entscheidungen.
+                            Indem wir uns bewusst mit diesen Motivationen auseinandersetzen, können wir
+                            besser nachvollziehen, was uns antreibt und welche Faktoren unsere Entscheidungen
+                            beeinflussen. <br>
+                            Dies führt dazu, dass wir bewusster und fundierter entscheiden, indem wir unsere eigenen
+                            Gedanken reflektieren. Es ist wie ein Versuch,
+                            unser Unterbewusstsein bewusster zu machen, damit wir uns selbst besser verstehen können.<a
+                                id="reference1" class="reference" href="#quelle1">1</a>
+                        </p>
+                        <p class="absatz">
+                            Im Folgenden wird die Theorie über die grundlegenden menschlichen Bedürfnisse von Manfred
+                            Max-Neef, einem chilenischen Ökonomen und Umweltaktivisten, erläutert, um uns diese
+                            Bedürfnisse bewusster zu machen. <br>
+                            Manfred Max-Neef, entwickelte die Theorie der menschlichen Bedürfnisse, um ein
+                            ganzheitliches Verständnis von menschlichen Anforderungen zu schaffen. Bei dieser Theorie
+                            wird
+                            hervorgehoben dass es wichtig ist, zwischen Bedürfnissen und ihren „Satisfier“ zu
+                            unterscheiden.
+                            Bedürfnisse sind grundlegende menschliche Anforderungen, während Satisfier die Mittel sind,
+                            um diese
+                            Bedürfnisse zu erfüllen. Dabei können mehrere Satisfier ein Bedürfnis gleichzeitig erfüllen,
+                            und ein Satisfier kann verschiedene Bedürfnisse befriedigen.<a id="reference2"
+                                class="reference" href="#quelle2">2</a>
+                        </p>
+
+                        <p class="absatz">
+                            In seiner Theorie beschreibt Manfred Max-Neef, dass alle menschlichen Bedürfnisse in einem
+                            System interagieren und voneinander abhängig sind. Es gibt keine Hierarchie, außer beim
+                            grundlegenden Bedürfnis nach Existenz, welches vorrangig ist. Stattdessen stehen Bedürfnisse
+                            in Beziehung zueinander, und ihre Erfüllung kann gleichzeitig, ergänzend oder auch
+                            konkurrierend sein. <br>
+                            Ein weiterer Aspekt seiner Theorie ist die Unterscheidung der Bedürfnisbefriedigung in drei
+                            Kontexten: dem individuellen Selbst (Eigenwelt), der sozialen Gruppe (Mitwelt) und der
+                            Umwelt. Die Erfüllung eines Bedürfnisses kann in diesen verschiedenen Kontexten
+                            unterschiedlich
+                            sein, abhängig von Zeit, Ort und Umständen.<a id="reference2" class="reference"
+                                href="#quelle2">2</a>
+                        </p>
+                    </div>
+
+                </div>
+
+                <section class="circle-section">
+                    <h2>Die Bedürfnisse nach Max-Neef</h2>
+                    <div class="circle">
+                        <div class="hidden-box" id="hiddenBox1">
+                            <h4>Existenzsicherung</h4>
+                            <p> Das Bedürfnis nach materieller Grundversorgung wie Nahrung, Kleidung und Schutz</p>
+                        </div>
+
+                        <div class="hidden-box" id="hiddenBox2">
+                            <h4>Schutz</h4>
+                            <p>Das Bedürfnis nach Sicherheit und Geborgenheit</p>
+                        </div>
+
+                        <div class="hidden-box" id="hiddenBox3">
+                            <h4>Bindung</h4>
+                            <p> Das Bedürfnis nach sozialen Beziehungen und Zugehörigkeit</p>
+                        </div>
+
+                        <div class="hidden-box" id="hiddenBox4">
+                            <h4>Verständnis</h4>
+                            <p>Das Bedürfnis nach Wissen, Bildung und Verständnis der Welt</p>
+                        </div>
+
+                        <div class="hidden-box" id="hiddenBox5">
+                            <h4>Teilhabe</h4>
+                            <p>Das Bedürfnis nach Mitbestimmung, Selbstbestimmung und Einflussnahme</p>
+                        </div>
+
+                        <div class="hidden-box" id="hiddenBox6">
+                            <h4>Freizeit</h4>
+                            <p>Das Bedürfnis nach Erholung, Spaß und kulturellen Aktivitäten</p>
+                        </div>
+
+                        <div class="hidden-box" id="hiddenBox7">
+                            <h4>Kreativität</h4>
+                            <p>Das Bedürfnis nach Entfaltung der eigenen Fähigkeiten und schöpferischem Ausdruck</p>
+                        </div>
+
+                        <div class="hidden-box" id="hiddenBox8">
+                            <h4>Identität</h4>
+                            <p>Das Bedürfnis nach Selbstachtung, Anerkennung und Respekt</p>
+                        </div>
+
+                        <div class="hidden-box" id="hiddenBox9">
+                            <h4>Freiheit</h4>
+                            <p>Das Bedürfnis nach Autonomie und Selbstbestimmung</p>
+                        </div>
+
+                        <div class="circle-icon-container">
+                            <div class="circle-element" onmouseenter="showBox(1)" onmouseleave="hideBox()"
+                                onclick="pinBox(1)">
+                                <img src="./assets/icons/subsistenz.svg" alt="Bild 1">
+                                <p class="fs-16">Subsistenz</p>
+                            </div>
+                            <div class="circle-element" onmouseenter="showBox(2)" onmouseleave="hideBox()"
+                                onclick="pinBox(2)">
+                                <img src="./assets/icons/schutz.svg" alt="Bild 2">
+                                <p class="fs-16">Schutz</p>
+                            </div>
+                            <div class="circle-element" onmouseenter="showBox(3)" onmouseleave="hideBox()"
+                                onclick="pinBox(3)">
+                                <img src="./assets/icons/bindung.svg" alt="Bild 3">
+                                <p class="fs-16">Bindung</p>
+                            </div>
+                            <div class="circle-element" onmouseenter="showBox(4)" onmouseleave="hideBox()"
+                                onclick="pinBox(4)">
+                                <img src="./assets/icons/verständnis.svg" alt="Bild 4">
+                                <p class="fs-16">Verständnis</p>
+                            </div>
+
+                            <div class="circle-element" onmouseenter="showBox(5)" onmouseleave="hideBox()"
+                                onclick="pinBox(5)">
+                                <img src="./assets/icons/teilhabe.svg" alt="Bild 5">
+                                <p class="fs-16">Teilhabe</p>
+                            </div>
+                            <div class="circle-element" onmouseenter="showBox(6)" onmouseleave="hideBox()"
+                                onclick="pinBox(6)">
+                                <img src="./assets/icons/freizeit.svg" alt="Bild 6">
+                                <p class="fs-16">Freizeit</p>
+                            </div>
+                            <div class="circle-element" onmouseenter="showBox(7)" onmouseleave="hideBox()"
+                                onclick="pinBox(7)">
+                                <img src="./assets/icons/kreativität.svg" alt="Bild 7">
+                                <p class="fs-16">Kreativität</p>
+                            </div>
+                            <div class="circle-element" onmouseenter="showBox(8)" onmouseleave="hideBox()"
+                                onclick="pinBox(8)">
+                                <img src="./assets/icons/identität.svg" alt="Bild 8">
+                                <p class="fs-16">Identität</p>
+                            </div>
+                            <div class="circle-element" onmouseenter="showBox(9)" onmouseleave="hideBox()"
+                                onclick="pinBox(9)">
+                                <img src="./assets/icons/freiheit.svg" alt="Bild 9">
+                                <p class="fs-16">Freiheit</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="radial-gradient-container">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                </section>
+
+                <section class="single-content-container">
+
+                    <div class="inner-single-content-container">
+                        <div class="inner-content">
+                            <h2>Zusammenspiel von Bedürfnissen und Werten</h2>
+                        </div>
+
+                        <div class="buffer"></div>
+
+                        <div class="inner-content">
+                            <p>
+                                Die Theorie von Max-Neef betont die Ganzheitlichkeit und Komplexität menschlicher
+                                Bedürfnisse. Sie bietet einen umfassenden Rahmen, um die menschliche Erfahrung zu
+                                verstehen und
+                                Lösungsansätze für individuelle und gesellschaftliche Herausforderungen zu entwickeln.
+                                Darüber hinaus betont sie die Vielfalt menschlicher Bedürfnisse und zeigt, dass sie sich
+                                wechselseitig beeinflussen können. Ein Bedürfnis kann nicht isoliert betrachtet werden,
+                                sondern steht
+                                in Beziehung zu anderen Bedürfnissen. <br> <br>
+                                Folgend wird zusätzlich erklärt, wie ebenfalls unsere persönlichen Werte Einfluss auf
+                                unsere Entscheidungen nehmen.
+                            </p>
+
+                            <img class="arrow-right" src="assets/arrow-right.svg"
+                                onclick="func(1); scrollToSection('section2')" alt="Icon">
+                        </div>
+
+                    </div>
+                </section>
+
+            </section>
+
+            <section class="article-container" id="article-container-1">
+                <div class="article">
+                    <div class="inner-content sticky article-headline">
+                        <h2>Inwiefern prägen Werte unsere Entscheidungen?</h2>
+                    </div>
+
+                    <div class="buffer"></div>
+
+                    <div class="inner-content text">
+                        <p class="absatz">Ähnlich wie die Bedürfnisse beeinflussen auch Werte unsere
+                            Entscheidungen. Werte sind Prinzipien, Regeln oder Überzeugungen, die darüber Aussagen
+                            machen, welche
+                            Prioritäten wir im Leben haben. Daher bauen viele Entscheidungen auf diesen auf. Doch was
+                            geschieht, wenn wir uns unseren Werten nicht klar sind? <br>
+                            Innere Werte und Prinzipien sind wie ein innerer Kompass, der uns sagt, wie wir in jeder
+                            Situation handeln sollen. Dies ist unser eigener Verhaltenskodex, den wir für uns selbst
+                            entwickelt haben, und er wirkt wie ein Leitlicht, vor allem wenn wir nicht weiter wissen.
+                            Wenn wir uns
+                            unserer Werte nicht sicher sind, kann es uns schwerfallen, Entscheidungen zu treffen. <br>
+                            Viele Werte, die wir bewusst oder unbewusst haben, stammen von äußeren Faktoren. Wir
+                            bekommen diese durch unsere Kultur, unsere Eltern, unserer Religion oder unserer politischen
+                            Umgebung vermittelt. Manche dieser Werte übernehmen wir, andere Werte wiederum können
+                            durch persönliche Erfahrungen entstehen. Dazu ist es wichtig zu verstehen, dass sich
+                            Werte über Zeit hinweg verändern können.<a id="reference3" class="reference"
+                                href="#quelle3">3</a>
+
+                        </p>
+                        <p class="absatz">
+                            Werte spielen eine entscheidende Rolle in unseren Entscheidungen und geben unserem Leben
+                            Bedeutung. Bewusstsein über diese zu erlangen, ermöglicht es uns, klarere und
+                            zielgerichtete Entscheidungen zu treffen, die mit unseren Überzeugungen übereinstimmen.
+                            Werte können nicht
+                            gewählt werden, sie entwickeln sich über die Zeit hinweg und spiegeln sich in unseren Taten
+                            wider. <br>
+                            Sofern du dir deiner Werte noch nicht bewusst bist, kannst du in deinem Alltag darauf
+                            achten, wofür du dich entscheidest, um dir dessen bewusster zu werden. Frage dich: Wie sieht
+                            ein
+                            guter Tag für dich aus? Was macht dich stolz und glücklich? Was macht das Leben lebenswert?
+                            Was schätzt du an anderen Personen in deinem Leben? Ohne was könntest du nicht leben?<a
+                                id="reference3" class="reference" href="#quelle3">3</a>
+                        </p>
+
+                    </div>
+                </div>
+
+                <div id="beispiel-section-values" class="beispiel-section">
+
+                    <div class="beispiel-values  inner-content">
+
+                        <div class="left-side">
+                            <h2>Deine Werte</h2>
+                            <div class="box-values">
+                                <p>Folgend werden einige Beispiele aufgelistet, die von Peter Hollins zu diesem Thema
+                                    aufgelistet wurden.<a id="reference3" class="reference" href="#quelle3">3</a> <a
+                                        class="bold">Versuche dich für 3 dieser Werte zu entscheiden.</a>
+                                    Es sind alles wichtige Werte und es kann schwierig wirken diese zu reduzieren, doch
+                                    versuche dich zu fragen:
+                                    Welche dieser Werte scheint dir am meisten Glück und Zufriedenheit zu bringen?
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="right-side">
+                            <div class="row">
+                                <div class="small-box" onclick="toggleClick(this)">
+                                    <p>Finanzielle Unabhängigkeit</p>
+                                </div>
+                                <div class="small-box" onclick="toggleClick(this)">
+                                    <p>Natur- und Umweltschutz</p>
+                                </div>
+                                <div class="small-box" onclick="toggleClick(this)">
+                                    <p>Liebe und Verbindungen</p>
+                                </div>
+                                <div class="small-box" onclick="toggleClick(this)">
+                                    <p>Freiheit und Gleichheit</p>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="small-box" onclick="toggleClick(this)">
+                                    <p>Bildung und Wissen</p>
+                                </div>
+                                <div class="small-box" onclick="toggleClick(this)">
+                                    <p>Spaß und Abenteuer</p>
+                                </div>
+                                <div class="small-box" onclick="toggleClick(this)">
+                                    <p>Körperliche Gesundheit und Fitness</p>
+                                </div>
+                                <div class="small-box" onclick="toggleClick(this)">
+                                    <p>Spirituelle oder religiöse Bestrebungen</p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="small-box" onclick="toggleClick(this)">
+                                    <p>Kunst und Kreativität</p>
+                                </div>
+                                <div class="small-box" onclick="toggleClick(this)">
+                                    <p>Arbeit, Führung, Geschäft</p>
+                                </div>
+                                <div class="small-box" onclick="toggleClick(this)">
+                                    <p>Sicherheit und Überleben</p>
+                                </div>
+                                <div class="small-box" onclick="toggleClick(this)">
+                                    <p>Sozialer Zusammenhalt</p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="small-box" onclick="toggleClick(this)">
+                                    <p>Frieden, Zufriedenheit, Entspannung</p>
+                                </div>
+                                <div class="small-box" onclick="toggleClick(this)">
+                                    <p>Ehre, Loyalität und Verlässlichkeit</p>
+                                </div>
+                                <div class="small-box" onclick="toggleClick(this)">
+                                    <p>Familie und Freunde</p>
+                                </div>
+                                <div class="small-box" onclick="toggleClick(this)">
+                                    <p>Persönliche Weiterentwicklung</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="radial-gradient-container">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                </div>
+
+
+                <div class="content-container absprungSection" id="section3">
+
+                    <div class="inner-content">
+                        <h2>Schwierigkeiten beim Entscheiden</h2>
+                        <p>In bestimmten Momenten kann es schwerer sein Entscheidungen zu treffen,
+                            was durch unterschiedliche Faktoren erschwert werden kann. Erfahre hier
+                            mehr, wie Entscheidungsmüdigkeit, das Paradox der Wahl oder kognitive
+                            Verzerrungen unseren Entscheidungsprozess beeinflussen.
+                        </p>
+
+                        <div type="button" onclick="location.href='ursachen.html'" class="primary-button">
+                            <a href="ursachen.html">erfahre mehr</a>
+                        </div>
+
+                    </div>
+
+                    <div class="buffer"></div>
+
+                    <div>
+                        <div class="illustration">
+                            <lottie-interactive class="minwidth45" autoplay loop path="./json/illustration3.json"
+                                interaction="play-on-show"></lottie-interactive>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+
+
+        <section class="quellen">
+
+            <div class="quellen-container">
+
+                <div class="quellen-header">
+                    <h2>Quellenangaben</h2>
+                    <img class="quellen-arrow" src="assets/arrow-head.svg" alt="Icon">
+                </div>
+
+                <div class="quellen-content">
+
+                    <p>Bedürfnisse</p>
+                    <div id="quelle1">
+                        <p>Hollins, P. (2021). „The Art of Strategic Decision-Making: How to make tough decisions
+                            quickly,
+                            intelligently, and safely.“ S. 12ff.</p>
+                    </div>
+                    <div id="quelle2">
+                        <p>Max-Neef, M., Elizalde, A., Hopenhayn, M., Herrera, F., Zemelman, H., Jataba, J., Weinstein,
+                            L.
+                            (1989): „Human Scale Development“. Dag Hammarskjöld foundation. Development Dialogue, 1,
+                            S. 19-33. http://www.daghammarskjold.se/wp-content/uploads/1989/05/89_1.pdf (abgerufen am
+                            15.10.2022)</p>
+                    </div>
+
+                    <br><br>
+
+                    <p>Werte</p>
+                    <div id="quelle3">
+                        <p>Hollins, P. (2021). „The Art of Strategic Decision-Making: How to make tough decisions
+                            quickly,
+                            intelligently, and safely.“ S. 34-39, 47.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <a href="startseite.html" class="title">Wahl x Weise</a>
+            <nav class="footer-nav">
+                <a href="about.html">About</a>
+                <a href="impressum.html">Impressum</a>
+                <a href="datenschutz.html">Datenschutz</a>
+
+            </nav>
+            <p class="footer-copyright">©2023 | Alle Rechte vorbehalten</p>
+        </div>
+    </footer>
+
+
+    <script src="/javascript/Gradient.js"></script>
+    <script src="/javascript/script.js"></script>
+
+    <!-- Lottie Libraries -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@1.5.7/dist/lottie-player.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/lottie-interactive@latest/dist/lottie-interactive.js">
+    </script>
+
+    <script>
+        const gradient2 = new Gradient()
+        gradient2.initGradient('#gradient-canvas-origins');
+
+        const gradient3 = new Gradient()
+        gradient3.initGradient('#gradient-canvas3');
+
+        maxSelectedBoxes = 3;
+    </script>
+
+</body>
+
+
+</html>

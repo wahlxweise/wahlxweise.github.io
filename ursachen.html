@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimal-ui, initial-scale=1.0, minimum-scale=1.0, 
+    maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Wahl x Weise</title>
+
+    <link rel="icon" href="/favicon5.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/content-pages.css">
+
+    <style>
+        :root {
+            --gradient-color-1: #95cea4;
+            --gradient-color-2: #A0E1C0;
+            --gradient-color-3: #f59c73;
+            --gradient-color-4: #fccc8d;
+        }
+
+        .nav-box-container {
+            max-width: 800px !important;
+        }
+
+        #gradient-canvas-reasons {
+            --gradient-color-1: #7EC892;
+            --gradient-color-2: #A0E1C0;
+            --gradient-color-3: #FB844D;
+            --gradient-color-4: #fccc8d;
+
+
+
+            height: 85vh;
+            width: 100vw;
+            position: absolute;
+            top: 0;
+        }
+
+        .radial-gradient-container div:nth-child(1) {
+            height: 94%;
+            width: 88%;
+            background-color: var(--gradient-color-4);
+            left: -29%;
+            top: 21%;
+        }
+
+        .radial-gradient-container div:nth-child(2) {
+            height: 60%;
+            width: 52%;
+            background-color: var(--gradient-color-2);
+            left: 60%;
+            top: 32%;
+            animation-delay: 8s;
+        }
+
+        .radial-gradient-container div:nth-child(3) {
+            height: 54%;
+            width: 77%;
+            background-color: var(--gradient-color-3);
+            left: 41%;
+            top: -1%;
+            animation-delay: 0.3s;
+        }
+
+        .radial-gradient-container div:nth-child(4) {
+            height: 80%;
+            width: 53%;
+            background-color: var(--gradient-color-1);
+            left: -10%;
+            top: -18%;
+            animation-delay: 5.2s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar nav-hidden">
+        <ul class="nav-list">
+
+            <li class="dropdown">
+                <a href="grundlagen.html" class="dropbtn">Grundlagen</a>
+                <div class="dropdown-content">
+                    <a href="./grundlagen.html#Beduerfnisse">Bedürfnisse</a> <br>
+                    <a href="./grundlagen.html#Werte">Werte</a>
+                </div>
+            </li>
+
+            <li class="dropdown">
+                <a href="ursachen.html" class="dropbtn active">Ursachen</a>
+                <div class="dropdown-content">
+                    <a href="./ursachen.html#Entscheidungsmuedigkeit">Entscheidungsmüdigkeit</a> <br>
+                    <a href="./ursachen.html#Auswahlparadox">Auswahlparadox</a><br>
+                    <a href="./ursachen.html#Kognitive Verzerrungen">Kognitive Verzerrungen</a><br>
+                    <a href="./ursachen.html#Planungs Paralyse">Planungs Paralyse</a><br>
+                </div>
+            </li>
+
+
+            <li class="title titleDesktop"><a href="startseite.html">
+                    <lottie-interactive path="./json/logo3.json" interaction="morph"></lottie-interactive>
+                </a></li>
+            <li class="title titleTablett"><a href="startseite.html">Wahl x Weise</a></li>
+
+            <li class="dropdown">
+                <a href="methoden.html" class="dropbtn">5 Methoden</a>
+                <div class="dropdown-content">
+                    <a href="./methoden.html#6 Huete Methode">6 Hüte Methode</a> <br>
+                    <a href="./methoden.html#10 / 10 / 10">10 / 10 / 10</a><br>
+                    <a href="./methoden.html#Pro-Kontra-Liste">Pro-Kontra-Liste</a><br>
+                    <a href="./methoden.html#ICE-Scoring-Model">ICE-Scoring-Model</a><br>
+                    <a href="./methoden.html#Ausschlussverfahren">Ausschlussverfahren</a><br>
+                </div>
+            </li>
+
+            <li class="dropdown">
+                <a href="tipps.html" class="dropbtn">Tipps & Tricks</a>
+                <div class="dropdown-content">
+                    <a href="./tipps.html#40-70 Regel">40-70 Regel</a><br>
+                    <a href="./tipps.html#Satisficing">Satisficing</a><br>
+                    <a href="./tipps.html#Eat the Frog">Eat the Frog</a><br>
+                    <a href="./tipps.html#Gewohnheiten">Gewohnheiten</a><br>
+                    <a href="./tipps.html#Vorsaetze">Vorsätze</a><br>
+                </div>
+            </li>
+
+        </ul>
+
+        <!-- <div class="navbarLine"></div> -->
+    </nav>
+
+    <div class="mobile-header">
+        <div class="title"><a href="startseite.html">Wahl x Weise</a></div>
+
+        <button class="hamburger">
+            <div class="ham-bar"></div>
+        </button>
+    </div>
+
+    <div class="mobile-nav">
+
+        <div class="mobile-navWrapper">
+            <div class="hamburger-content">
+                <a href="startseite.html" class="menu-item">home</a>
+
+                <div class="dropdown">
+                    <div class="mobile-nav-row">
+                        <a href="grundlagen.html" class="menu-item">Grundlagen</a>
+                        <img class="mobile-nav-arrow" src="assets/arrow-head.svg" alt="Icon">
+                    </div>
+                    <div class="dropdownOptions">
+                        <ul>
+                            <a href="./grundlagen.html#Beduerfnisse">Bedürfnisse</a>
+                            <a href="./grundlagen.html#Werte">Werte</a>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <div class="mobile-nav-row">
+                        <a href="ursachen.html" class="menu-item">Ursachen</a>
+                        <img class="mobile-nav-arrow" src="assets/arrow-head.svg" alt="Icon">
+                    </div>
+                    <div class="dropdownOptions">
+                        <ul>
+                            <a href="./ursachen.html#Entscheidungsmuedigkeit">Entscheidungsmüdigkeit</a>
+                            <a href="./ursachen.html#Auswahlparadox">Auswahlparadox</a>
+                            <a href="./ursachen.html#Kognitive Verzerrungen">Kognitive Verzerrungen</a>
+                            <a href="./ursachen.html#Planungs Paralyse">Planungs Paralyse</a>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <div class="mobile-nav-row">
+                        <a href="methoden.html" class="menu-item">5 Methoden</a>
+                        <img class="mobile-nav-arrow" src="assets/arrow-head.svg" alt="Icon">
+                    </div>
+                    <div class="dropdownOptions">
+                        <ul>
+                            <a href="./methoden.html#6 Huete Methode">6 Hüte Methode</a>
+                            <a href="./methoden.html#10 / 10 / 10">10 / 10 / 10</a>
+                            <a href="./methoden.html#Pro-Kontra-Liste">Pro-Kontra-Liste</a>
+                            <a href="./methoden.html#ICE-Scoring-Model">ICE-Scoring-Model</a>
+                            <a href="./methoden.html#Ausschlussverfahren">Ausschlussverfahren</a>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <div class="mobile-nav-row">
+                        <a href="tipps.html" class="menu-item">Tipps und Tricks</a>
+                        <img class="mobile-nav-arrow" src="assets/arrow-head.svg" alt="Icon">
+                    </div>
+                    <div class="dropdownOptions">
+                        <ul>
+                            <a href="./tipps.html#40-70 Regel">40-70 Regel</a>
+                            <a href="./tipps.html#Satisficing">Satisficing</a>
+                            <a href="./tipps.html#Eat the Frog">Eat the Frog</a>
+                            <a href="./tipps.html#Gewohnheiten">Gewohnheiten</a>
+                            <a href="./tipps.html#Vorsätze">Vorsätze</a>
+                        </ul>
+                    </div>
+                </div>
+
+                <a href="index.html" class="menu-item">Fragerunde</a>
+            </div>
+        </div>
+
+
+        <canvas id="gradient-canvas3"> </canvas>
+    </div>
+
+    <div class="up-button">
+        <img src="assets/arrow-up-smol.svg" alt="Icon">
+    </div>
+
+    <section class="hero-banner scroll-section" id="section1">
+        <canvas id="gradient-canvas-reasons" data-transition-in> </canvas>
+        <div class="hero-content scroll" data-rate=".2" data-direction="vertical">
+            <h1>Die Schwierigkeiten beim Entscheiden</h1>
+            <p>Diese Seite beleuchtet die Herausforderungen bei der Entscheidungsfindung und zielt darauf ab, ihre
+                Ursachen verständlicher zu machen.
+                Das Verständnis der Ursprünge ermöglicht es, die Problem leichter bewältigen zu können.
+            </p>
+        </div>
+        <div><img onclick="scrollToSection('section2')" class="arrow" src="/assets/arrow-down-long.svg"></div>
+    </section>
+
+    <section class="content" id="section2">
+
+        <div class="nav-box-container sticky">
+
+            <div class="vertical-buffer"></div>
+            <nav class="nav-box hidden">
+                <a class="nav-box-link fs-16 active" onclick="func(0); scrollToSection('section2')"
+                    href="#Entscheidungsmuedigkeit">Entscheidungsmüdigkeit</a>
+                <a class="nav-box-link fs-16" onclick="func(1); scrollToSection('section2')"
+                    href="#Auswahlparadox">Auswahlparadox</a>
+                <a class="nav-box-link fs-16" onclick="func(2); scrollToSection('section2')"
+                    href="#Kognitive Verzerrungen">Kognitive Verzerrungen</a>
+                <a class="nav-box-link fs-16" onclick="func(3); scrollToSection('section2')"
+                    href="#Planungs Paralyse">Planungs Paralyse</a>
+            </nav>
+
+            <nav class="nav-box mobile">
+                <a class="nav-box-link fs-14 active" onclick="func(0); scrollToSection('section2')"
+                    href="#Entscheidungsmuedigkeit">Müdigkeit</a>
+                <a class="nav-box-link fs-14" onclick="func(1); scrollToSection('section2')"
+                    href="#Auswahlparadox">Paradox</a>
+                <a class="nav-box-link fs-14" onclick="func(2); scrollToSection('section2')"
+                    href="#Kognitive Verzerrungen">Verzerrungen</a>
+                <a class="nav-box-link fs-14" onclick="func(3); scrollToSection('section2')"
+                    href="#Planungs Paralyse">Paralyse</a>
+            </nav>
+        </div>
+
+        <div class="all-articles">
+            <div class="article-container" id="article-container-0">
+                <div class="article">
+                    <div class="inner-content sticky article-headline">
+                        <h2>Wie entsteht Entscheidungs- müdigkeit?</h2>
+                    </div>
+
+                    <div class="buffer"></div>
+
+                    <div class="inner-content text">
+                        <p class="absatz">Im Laufe eines Tages treffen wir viele Entscheidungen.
+                            Jedoch kann eine große Anzahl an Entscheidungen negative Auswirkungen
+                            auf die Kontrolle unseres Verhaltens und die Qualität
+                            nachfolgender Entscheidungen haben. Dieses Phänomen wird als Entscheidungsmüdigkeit
+                            bezeichnet und tritt ein wenn, unsere mentale Kapazität durch wiederholte
+                            Entscheidungsprozesse aufgebraucht wurde.<a id="reference1" class="reference"
+                                href="#quelle1">1</a>
+                            <br><br>
+                            Dies führt auf die Theorie der Ego-Depletion zurück, welche erklärt, dass wenn Personen
+                            verantwortungsvollen Entscheidungen nachgehen, anstatt ihren grundlegenden Impulsen
+                            nachzugeben, mentale Ressourcen verbrauchen. Auf ein Stück Kuchen zu verzichten ist demnach
+                            schwieriger, als es anzunehmen, da es mehr Energie verbraucht, die langfristigen Vorteile zu
+                            berücksichtigen als die jetzigen Bedürfnisse zu befriedigen.
+
+                        </p>
+                        <p class="absatz">
+                            Demnach wird die geistige Energie immer weiter erschöpft, wenn Entscheidungen oder Aufgaben
+                            ausgeführt werden, die Selbstkontrolle erfordern. Dazu kommt, dass komplexere Entscheidungen
+                            mehr kosten als einfachere. Je weiter diese Energie aufgebraucht wird, desto weniger sind
+                            wir in der Lage unsere Grundbedürfnisse abzulehnen, worunter im Endeffekt unsere
+                            Entscheidungen
+                            leiden.<a id="reference2" class="reference" href="#quelle2">2</a> Daher kann der Prozess
+                            der Ego-Depletion zur Entscheidungsmüdigkeit
+                            führen.<a id="reference1" class="reference" href="#quelle1">1</a> <br>
+                            Entscheidungsmüdigkeit bezeichnet den Zustand, in dem die Qualität und Effizienz von
+                            Entscheidungen abnimmt, je mehr Entscheidungen im Laufe des Tages getroffen werden. Dieser
+                            Zustand kann dazu führen, dass unüberlegte Entscheidungen getroffen werden,
+                            da der Analyseprozess übersprungen wird. Es kann auch dazu führen, dass die Entscheidung
+                            verschoben oder gar nicht getroffen wird.<a id="reference2" class="reference"
+                                href="#quelle2">2</a>
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="beispiel-section">
+
+                    <div class="center inner-content">
+                        <div class="center df">
+                            <h2>Tagtägliche Entscheidungen</h2>
+                            <div class="box-aufgabenstellung">
+                                <p>
+                                    Tagtäglich treffen wir viele verschiedene und auch kleinere Entscheidung, die dazu
+                                    führen können, dass wir unter
+                                    Entscheidungsmüdigkeit leiden. In dem Beispiel werden einige dieser alltäglichen
+                                    Entscheidung dargestellt,
+                                    helfe Curio sich zu entscheiden.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="beispiel-10">
+
+                            <div class="df-interactive">
+                                <div class="side-box" id="leftBox" onclick="updateBoxes()">
+                                    <img src="/assets/icons/mond.svg">
+                                    <p>länger schlafen</p>
+                                </div>
+
+                                <div class="center-box">
+
+                                    <div class="curio-box">
+                                        <lottie-interactive id="curio-awake" class="curio" autoplay loop
+                                            path="./json/curio.json" interaction="play-on-show"></lottie-interactive>
+                                        <lottie-interactive id="curio-asleep" class="curio" autoplay
+                                            path="./json/tired-curio.json" interaction="play-on-show">
+                                        </lottie-interactive>
+                                    </div>
+
+                                    <div class="stamina-bar-outer">
+                                        <div class="stamina-bar-opposite" id="oppositeBar"></div>
+                                        <div class="stamina-bar-inner" id="progressBar"></div>
+                                    </div>
+                                </div>
+
+                                <div class="side-box" id="rightBox" onclick="updateBoxes()">
+                                    <img src="/assets/icons/wecker.svg">
+                                    <p>früh aufstehen</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="radial-gradient-container">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="article-container" id="article-container-1">
+                <div class="article">
+                    <div class="inner-content sticky article-headline">
+                        <h2>Worin besteht das Paradox der Wahl?</h2>
+                    </div>
+
+                    <div class="buffer"></div>
+
+                    <div class="inner-content text">
+                        <p class="absatz">„Je mehr, umso besser!“ <br><br>
+                            In der heutigen Gesellschaft wird oft angenommen, dass mehr
+                            Auswahlmöglichkeiten besser sind und dass das Verlangen nach Optionen unendlich ist. Es gibt
+                            sicherlich Situationen, in denen eine breite Palette von Optionen positive Effekte haben
+                            kann, wie
+                            z.B. bei einem Restaurantbesuch, wenn man ein spezifisches Gericht erwartet, oder bei einem
+                            Einkauf mit schwierig zu findenden Zutaten. Doch gleichzeitig gibt es das Phänomen der
+                            „Überwahl“, das auftritt, wenn es zu viele ähnliche und gleichwertige Optionen gibt.<a
+                                id="reference3" class="reference" href="#quelle3">3</a> <br><br>
+                            Mit einer steigenden Anzahl von Auswahlmöglichkeiten steigt auch der Aufwand, eine gute
+                            Entscheidung zu treffen, was zu einer Belastung werden kann. Die Entscheidungsfindung wird
+                            komplexer und kann zu Überforderung führen. Eine Zunahme der Auswahlmöglichkeiten kann
+                            dazu führen, dass die Motivation eine Entscheidung zu treffen abnimmt oder sogar komplett
+                            abgebrochen wird, da es durch die Angst, die falsche Wahl zu treffen, zu Unsicherheit und
+                            Zögern
+                            kommt. Auch kann es zu Unzufriedenheit mit der schließlich gewählten Option kommen, da
+                            immer wieder hinterfragt wird, ob die anderen Optionen besser gewesen wären.<a
+                                id="reference4" class="reference" href="#quelle4">4</a>
+                        </p>
+                        <p class="absatz">
+                            Es ist nicht immer schlecht eine größere Auswahl an Optionen zu haben, daher müssen zuerst
+                            einige Bedingungen erfüllt werden, damit es zu dem Auswahlparadox kommt. <br>
+                            Eine Voraussetzung dafür ist, dass die Personen mit den Auswahlmöglichkeiten keine klare
+                            Präferenz für einen bestimmten Artikeltyp oder eine Kategorie aufweist. Wenn es bereits
+                            vorher klare Präferenzen gibt, kann die Entscheidungsfindung leichter fallen.
+                            Darüber hinaus kann es zu einem Auswahlparadox kommen, wenn kein klarer Favorit aus
+                            der Auswahl hervorsticht und alle Optionen als gleichwertig angesehen werden.<a
+                                id="reference5" class="reference" href="#quelle5">5</a> Wenn ein Artikel, z.B. durch
+                            einen Rabatt, aus der Menge
+                            hervorsticht, kann unsere Wahl erleichtert werden. <br>
+                            Ebenfalls kann es zu einer höheren Zufriedenheit bei einer großen Auswahl kommen, wenn die
+                            Person eine bestimmte Expertise in dem Thema hat, wodurch sie die Optionen besser abschätzen
+                            kann und nicht von der Vielfalt überwältigt wird.<a id="reference5" class="reference"
+                                href="#quelle5">5</a>
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="beispiel-section">
+
+                    <div class="beispiel-paradox inner-content">
+                        <div class="center">
+                            <h2>Eiscreme-Paradox</h2>
+                            <div class="box-aufgabenstellung">
+                                <p>Stelle dir vor, du stehst vor einem neuen Eisgeschäft, und vor dir erstreckt
+                                    sich eine große Auswahl an Eissorten. Doch leider trägst du bloß genügend Geld mit
+                                    dir, um dir zwei Sorten zu kaufen.
+                                    <a class="bold">Nun liegt es an dir, dich für 2 der Sorten zu entscheiden.</a>
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+                            <div class="small-box paradox" onclick="toggleClick(this)">
+                                <p>Kirsche</p>
+                            </div>
+                            <div class="small-box paradox" onclick="toggleClick(this)">
+                                <p>Schokolade</p>
+                            </div>
+                            <div class="small-box paradox" onclick="toggleClick(this)">
+                                <p>Vanille</p>
+                            </div>
+                            <div class="small-box paradox" onclick="toggleClick(this)">
+                                <p>Kokosnuss</p>
+                            </div>
+                            <div class="small-box paradox hidden" onclick="toggleClick(this)">
+                                <p>Mango</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="small-box paradox" onclick="toggleClick(this)">
+                                <p>Zitrone</p>
+                            </div>
+                            <div class="small-box paradox" onclick="toggleClick(this)">
+                                <p>Himbeere</p>
+                            </div>
+                            <div class="small-box paradox" onclick="toggleClick(this)">
+                                <p>Erdbeere</p>
+                            </div>
+                            <div class="small-box paradox" onclick="toggleClick(this)">
+                                <p>Haselnuss</p>
+                            </div>
+                            <div class="small-box paradox hidden" onclick="toggleClick(this)">
+                                <p>Cookies & Cream</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="small-box paradox" onclick="toggleClick(this)">
+                                <p>Pistazie</p>
+                            </div>
+                            <div class="small-box paradox" onclick="toggleClick(this)">
+                                <p>Walnuss</p>
+                            </div>
+                            <div class="small-box paradox" onclick="toggleClick(this)">
+                                <p>Stracciatella</p>
+                            </div>
+                            <div class="small-box paradox" onclick="toggleClick(this)">
+                                <p>Banane </p>
+                            </div>
+                            <div class="small-box paradox hidden" onclick="toggleClick(this)">
+                                <p>Schlumpfeis</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="small-box paradox" onclick="toggleClick(this)">
+                                <p>Waldmeister</p>
+                            </div>
+                            <div class="small-box paradox" onclick="toggleClick(this)">
+                                <p>Minz-Schokolade</p>
+                            </div>
+                            <div class="small-box paradox" onclick="toggleClick(this)">
+                                <p>Yogurette</p>
+                            </div>
+                            <div class="small-box paradox" onclick="toggleClick(this)">
+                                <p>Erdnussbutter</p>
+                            </div>
+                            <div class="small-box paradox hidden" onclick="toggleClick(this)">
+                                <p>Tiramisu</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="small-box paradox" onclick="toggleClick(this)">
+                                <p>Joghurt</p>
+                            </div>
+                            <div class="small-box paradox" onclick="toggleClick(this)">
+                                <p>Salted Karamell</p>
+                            </div>
+                            <div class="small-box paradox" onclick="toggleClick(this)">
+                                <p>Nutella</p>
+                            </div>
+                            <div class="small-box paradox" onclick="toggleClick(this)">
+                                <p>Snickers</p>
+                            </div>
+                            <div class="small-box paradox hidden" onclick="toggleClick(this)">
+                                <p>Chai</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="radial-gradient-container">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="article-container" id="article-container-2">
+
+                <div class="article">
+                    <div class="inner-content sticky article-headline">
+                        <h2>Was sind kognitiven Verzerrungen?</h2>
+                    </div>
+
+                    <div class="buffer"></div>
+
+                    <div class="inner-content text">
+                        <p class="absatz">Kognitive Verzerrungen sind Denkfehler oder systematische Abweichungen in
+                            unserem
+                            Denkprozess. Sie entstehen aufgrund unserer begrenzten Fähigkeit, Informationen objektiv zu
+                            verarbeiten und werden durch persönliche Erfahrungen, Erwartungen, Emotionen und
+                            unbewusste Denkmuster beeinflusst.<a id="reference6" class="reference" href="#quelle6">6</a>
+                            <a id="reference7" class="reference" href="#quelle7">7</a> <br><br>
+                            Diese Verzerrungen können dazu führen, dass wir unlogische oder irrationale Entscheidungen
+                            treffen, bestimmte Informationen ignorieren oder falsch interpretieren. Es sind Schwächen im
+                            Denken, bei denen wir Schlussfolgerungen ziehen, ohne ausreichende Beweise zu haben. Man
+                            könnte sie als mentale Abkürzungen betrachten, die auf den ersten Blick sinnvoll erscheinen,
+                            aber
+                            im Nachhinein bei genauerer Betrachtung zusammenbrechen. Es gibt zahlreiche Verzerrungen,
+                            die Verhaltensweisen beeinflussen, wie Entscheidungsfindung, Urteilsvermögen und soziale
+                            Interaktionen.<a id="reference7" class="reference" href="#quelle7">7</a>
+                        </p>
+
+
+                    </div>
+
+                </div>
+
+                <div class="article">
+                    <div class="inner-content sticky article-headline">
+                        <h2>Verlustaversion und die versunkenen Kosten</h2>
+                    </div>
+
+                    <div class="buffer"></div>
+
+                    <div class="inner-content text">
+                        <p class="absatz">
+                            Verlustaversion beschreibt unsere starke Tendenz, Verluste zu vermeiden, anstatt
+                            Gewinne zu erzielen. Dabei empfinden wir den Schmerz, etwas zu verlieren, als doppelt so
+                            stark
+                            wie die Freude, etwas zu gewinnen. Wenn uns eine 50:50-Chance gegeben wird, entweder 100€
+                            zu gewinnen oder 100€ zu verlieren, entscheiden sich die meisten von uns gegen das
+                            Spiel, weil der erwartete Wert als negativ wahrgenommen wird.<a id="reference8"
+                                class="reference" href="#quelle8">8</a> <br><br>
+                            Diese Verlustaversion kann ebenfalls zu dem Versunkene-Kosten-Phänomen führen. Dieses
+                            beschreibt unsere Tendenz, an einer Entscheidung festzuhalten, wenn wir bereits Zeit, Mühe
+                            oder Geld investiert haben, unabhängig davon, ob die aktuellen Kosten die Vorteile
+                            überwiegen.
+                            Denn würden wir uns dazu entscheiden, die Aktivität abzubrechen, gingen unsere vorherigen
+                            Investitionen verloren.<a id="reference9" class="reference" href="#quelle9">9</a>
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="beispiel-section">
+
+                    <div class="beispiel-paradox inner-content analysis pointer">
+                        <div class="sunken-cost">
+                            <lottie-interactive id="sunkenCost" path="./json/sunken-cost.json" interaction="click">
+                            </lottie-interactive>
+                        </div>
+                    </div>
+
+
+                    <div class="radial-gradient-container">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                </div>
+
+                <div class="article">
+                    <div class="inner-content sticky article-headline">
+                        <h2>Der Confirmation Bias</h2>
+                    </div>
+
+                    <div class="buffer"></div>
+
+                    <div class="inner-content text">
+                        <p class="absatz">
+                            Der „Confirmation Bias“ beschreibt die Neigung, Informationen so zu interpretieren oder zu
+                            suchen, dass sie unsere bestehenden Überzeugungen bestätigen.
+                            Nachdem wir eine Meinung oder Entscheidung gebildet haben, neigen wir dazu, nur die
+                            positiven Aspekte zu
+                            sehen und Fakten so auszulegen, dass sie unsere Entscheidung unterstützen. Dies birgt das
+                            Risiko,
+                            fehlerhafte Entscheidungen zu treffen, da wir Argumente, die unserer Meinung widersprechen
+                            könnten, ignorieren oder verdrehen.<a id="reference8" class="reference"
+                                href="#quelle8">8</a>
+                            <br>
+                            Dies kann zu schlechten Entscheidungen führen, da es die Realität verfälscht, von der wir
+                            unsere Beweise ziehen.<a id="reference10" class="reference" href="#quelle10">10</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="article">
+                    <div class="inner-content sticky article-headline">
+                        <h2>Der Bandwagon Effekt</h2>
+                    </div>
+
+                    <div class="buffer"></div>
+
+                    <div class="inner-content text">
+                        <p class="absatz">
+                            Der Bandwagon-Effekt bezieht sich darauf, dass wir bestimmte Verhaltensweisen oder
+                            Überzeugungen übernehmen, weil viele andere Menschen dasselbe tun. Dabei überspringen wir
+                            den komplizierten Prozess der eigenen Bewertung und verlassen uns darauf, dass andere dies
+                            bereits vor uns getan haben. Wir tun dies, um nicht negativ aufzufallen und ausgeschlossen
+                            zu werden, oder um auf der „sicheren Seite“ zu sein. <br>
+                            Dies kann jedoch dazu führen, dass kritisches Denken verloren geht
+                            und wir Entscheidungen treffen, die nicht in unseren eigenen Interessen sind. Es ist
+                            wichtig, Ideen und Verhaltensweisen auf ihre Merkmale und Auswirkungen für uns zu prüfen und
+                            dann
+                            Entscheidungen zu treffen. Der Bandwagon-Effekt kann uns davon abhalten, unabhängige
+                            Entscheidungen zu treffen, indem er uns glauben lässt, dass die populäre Entscheidung die
+                            richtige ist.<a id="reference11" class="reference" href="#quelle11">11</a>
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div style="width: 100%; height: auto; overflow: hidden">
+                    <div class="curious-curio">
+                        <lottie-interactive id="curious-curio" path="./json/bandwagon-curio.json"
+                            interaction="play-on-show"></lottie-interactive>
+                    </div>
+
+                    <div class="train-container">
+                        <div class="train">
+                            <lottie-player id="trainAnimation" src="./json/bandwagon.json"></lottie-player>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="article-container" id="article-container-3">
+                <div class="article">
+                    <div class="inner-content sticky article-headline">
+                        <h2>Planungsparalyse - worum geht's?</h2>
+                    </div>
+
+                    <div class="buffer"></div>
+
+                    <div class="inner-content text">
+                        <p class="absatz">
+                            Die Planungs Paralyse beschreibt die Tendenz, Entscheidungen aufzuschieben oder sich zu sehr
+                            in
+                            einer Planungsphase zu vertiefen, weil man glaubt, durch das Sammeln neuer Informationen ein
+                            besseres Ergebnis zu erzielen. Dadurch entsteht das Gefühl, dass es weitere Informationen
+                            gibt, welche benötigt werden, um voranzukommen. Doch dieser Ansatz hat seine Grenzen, da mit
+                            der
+                            Zeit der Nutzen der zusätzlichen Informationen und Analysen abnimmt.<a id="reference12"
+                                class="reference" href="#quelle12">12</a>
+                            Es ist wichtig, ein Gleichgewicht zu finden und nicht zwischen zwei Extremen zu schwanken:
+                            Entscheidungen ohne gründliche Studien und Reflexion („Extinction by Instinct“) oder die
+                            übermäßige Verwendung von Zahlen, Analysen und Berichten ohne klares Ziel („Paralysis by
+                            Analysis“).<a id="reference13" class="reference" href="#quelle13">13</a> <br><br>
+                            Es kann schnell zu einer Entscheidungslähmung kommen, wenn es zu viele
+                            Informationen gibt und man sich in einem Übermaß von Informationen verliert. Darüber hinaus
+                            kann ein Auslöser sein, dass versucht wird, sich vor der eigentlichen Umsetzung der Aufgabe
+                            oder
+                            des Projekts zu scheuen. Dazu kommt, dass Perfektionismus und der Versuch, die Analysephase
+                            komplett abzuschließen, zu einer Entscheidungslähmung führen können. Fehlende Zeitvorgaben
+                            für die Analyse können die Situation weiter verschlimmern, da kein klarer Rahmen für die
+                            Entscheidungsfindung vorgegeben ist.<a id="reference12" class="reference"
+                                href="#quelle12">12</a>
+                        </p>
+                        <p class="absatz">
+                            Die Ursachen für Planungs Paralyse können vielfältig sein: Zum Beispiel könnte man mit
+                            einer Lösung für ein Problem starten, nur um später herauszufinden, dass diese nicht
+                            funktioniert.
+                            Dann beginnt man verzweifelt nach weiteren Beweisen zu suchen, um die ursprüngliche Theorie
+                            zu
+                            stützen oder eine neue zu entwickeln. Manchmal sucht man auch nach zusätzlichen Beweisen, um
+                            eine Aussage zu unterstützen, von der man glaubt, dass sie nicht gut aufgenommen wird.
+                            Ein Mangel an Selbstvertrauen in die eigene Arbeit oder Angst und Unentschlossenheit können
+                            ebenfalls zu Planungs Paralyse führen.<a id="reference12" class="reference"
+                                href="#quelle12">12</a> <br>
+                            Planen und Analysieren sind Komfortzonen, da diese leicht auszuführen sind und kein aktives
+                            Handeln benötigen, welche Risiken mit sich führen könnten. Es ist einfacher, in der
+                            Komfortzone der Planung zu bleiben, weil es technisch gesehen zu der Erfüllung der Aufgabe
+                            beiträgt. Dadurch entsteht das Gefühl produktiv zu sein, obwohl ab einem bestimmten Punkt
+                            die Entscheidung nur noch herausgezögert wird.<a id="reference14" class="reference"
+                                href="#quelle14">14</a>
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="beispiel-section">
+
+                    <div class="beispiel-paradox inner-content pointer analysis">
+                        <lottie-interactive path="./json/analysis-paralysis.json" interaction="click">
+                        </lottie-interactive>
+                    </div>
+
+                    <div class="radial-gradient-container">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="content-container absprungSection" id="section3">
+
+            <div class="inner-content">
+                <h2>5 Methoden für kluge Entscheidungen</h2>
+                <p>Schon mal von der 6 Hut Methode gehört? Oder der 10 / 10 / 10 Methode?
+                    Es gibt viele unterschiedliche Techniken, die verwendet werden können,
+                    um den Entscheidungsprozess zu erleichtern. Finde hier mehr über fünf Methoden heraus,
+                    die dich dabei unterstützen könnten.
+                </p>
+
+                <div type="button" onclick="location.href='methoden.html'" class="primary-button">
+                    <a href="methoden.html">erfahre mehr</a>
+                </div>
+
+            </div>
+
+            <div class="buffer"></div>
+
+            <div>
+                <div class="illustration verschieben" id="fiveHatCurio">
+                    <lottie-player autoplay loop src="./json/methoden-illu.json">
+                    </lottie-player>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="quellen inner-content">
+
+        <div class="quellen-container">
+
+            <div class="quellen-header">
+                <h2>Quellenangaben</h2>
+                <img class="quellen-arrow" src="assets/arrow-head.svg" alt="Icon">
+            </div>
+
+            <div class="quellen-content">
+                <h4>Entscheidungsmüdigkeit</h4>
+                <div id="quelle1">
+                    <p><a class="bold">Quelle 1:</a>
+                        Pignatiello, G. A., Martin, R. J., & Hickman, R. L. (2018). „Decision fatigue: A conceptual
+                        analysis.“
+                        Journal of Health Psychology, 25(1), 123–135. https://doi.org/10.1177/1359105318763510
+                        (abgerufen am 22.07.2023)</p>
+                </div>
+                <div id="quelle2">
+                    <p><a class="bold">Quelle 2:</a>
+                        Oto, B. (2012). „When thinking is hard: managing decision fatigue.“ EMS
+                        world. 41. 46-50. https://www.researchgate.net/publication/
+                        225279309_When_thinking_is_hard_managing_decision_fatigue (abgerufen am 22.07.2023)</p>
+                </div>
+
+                <br><br>
+
+                <h4>Paradox der Wahl</h4>
+                <div id="quelle3">
+                    <p><a class="bold">Quelle 3:</a>
+                        Iyengar, S. S., & Lepper, M. R. (2000). „When choice is demotivating: Can one desire too
+                        much of a good thing?“ Journal of Personality and Social Psychology, 79(6), 995–1006. https://
+                        faculty.washington.edu/jdb/345/345%20Articles/Iyengar%20&%20Lepper%20(2000).pdf
+                        (abgerufen am 21.07.2023)</p>
+                </div>
+                <div id="quelle4">
+                    <p><a class="bold">Quelle 4:</a>
+                        Schwartz, B. (2007). „The paradox of choice: why more is less.“ (Adobe Acrobat eBook Reader
+                        Edition). HarperCollins Publishers Inc. S. 5, 48, 85.</p>
+                </div>
+                <div id="quelle5">
+                    <p><a class="bold">Quelle 5:</a>
+                        Scheibehenne, B., Todd, P. M., Greifeneder, R. (2010) „Can there ever be too many options? A
+                        meta‐analytic review of choice overload.“ Journal of consumer research. 37(3). S. 409–425.
+                        https://archive-ouverte.unige.ch//unige:76440 (abgerufen am 21.07.2023)</p>
+                </div>
+
+                <br><br>
+
+                <h4>Kognitive Verzerrungen</h4>
+                <div id="quelle6">
+                    <p><a class="bold">Quelle 6:</a>
+                        MindTools. (o.D.). „Cognitive Bias - How to Make Objective Decisions“ https://
+                        www.mindtools.com/a0ozgex/cognitive-bias (abgerufen am 20.07.2023)</p>
+                </div>
+                <div id="quelle7">
+                    <p><a class="bold">Quelle 7:</a>
+                        Hollins, P. (2021). „The Art of Strategic Decision-Making: How to make tough decisions quickly,
+                        intelligently, and safely“. S. 140ff.</p>
+                </div>
+                <div id="quelle9">
+                    <p><a class="bold">Quelle 8:</a>
+                        Spreer, P. (2021). „PsyConversion®“ (2. Auflage). Springer Gabler. S. 226, 246. https://doi.org/
+                        10.1007/878-3-658-32255-7 (abgerufen am 22.07.2023)</p>
+                </div>
+                <div id="quelle9">
+                    <p><a class="bold">Quelle 9:</a>
+                        The Decision Lab. (o.D.). „Why do we buy insurance? Loss-aversion, explained.“. https://
+                        thedecisionlab.com/biases/loss-aversion (abgerufen am 22.07.2023)</p>
+                </div>
+                <div id="quelle10">
+                    <p><a class="bold">Quelle 10:</a>
+                        The Decision Lab. (o.D.). „Why do we favor our existing beliefs? - The Confirmation Bias,
+                        explained“. https://thedecisionlab.com/biases/confirmation-bias (abgerufen am 22.07.2023)</p>
+                </div>
+                <div id="quelle11">
+                    <p><a class="bold">Quelle 11:</a>
+                        The Decision Lab. (o.D.). „Why do we support opinions as they become more popular?
+                        Bandwagon Effect, explained“. https://thedecisionlab.com/biases/bandwagon-effect (abgerufen
+                        am 22.07.2023)</p>
+                </div>
+
+
+
+                <br><br>
+
+                <h4>Planungs Paralyse</h4>
+                <div id="quelle12">
+                    <p><a class="bold">Quelle 12:</a>
+                        Famuyide, S. (2017, 14. Februar). „Managing Analysis Paralysis“. Business Analyst Learnings.
+                        https://www.businessanalystlearnings.com/blog/2014/2/10/managing-analysis-paralysis?
+                        expand_article=1 (abgerufen am 20.07.2023)</p>
+                </div>
+                <div id="quelle13">
+                    <p><a class="bold">Quelle 13:</a>
+                        Langley, A. (1995). „Between "Paralysis by Analysis" and "Extinction by Instinct"“. Sloan
+                        Management Review. 36(3). S. 63. https://researchbcc.files.wordpress.com/2012/10
+                        between_paralysis_by_analysis_and_extinction_by_instinct.pdf (abgerufen am 20.07.2023)</p>
+                </div>
+                <div id="quelle14">
+                    <p><a class="bold">Quelle 14:</a>
+                        Hollins, P. (2021). „The Art of Strategic Decision-Making: How to make tough decisions quickly,
+                        intelligently, and safely.“ S. 172.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <a href="startseite.html" class="title">Wahl x Weise</a>
+            <nav class="footer-nav">
+                <a href="about.html">About</a>
+                <a href="impressum.html">Impressum</a>
+                <a href="datenschutz.html">Datenschutz</a>
+
+            </nav>
+            <p class="footer-copyright">©2023 | Alle Rechte vorbehalten</p>
+        </div>
+    </footer>
+
+
+    <script src="/javascript/Gradient.js"></script>
+    <script src="/javascript/script.js"></script>
+
+    <!-- Lottie Libraries -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@1.5.7/dist/lottie-player.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/lottie-interactive@latest/dist/lottie-interactive.js">
+    </script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+
+
+    <script>
+        const gradient5 = new Gradient()
+        gradient5.initGradient('#gradient-canvas-reasons');
+        const gradient3 = new Gradient()
+        gradient3.initGradient('#gradient-canvas3');
+
+        maxSelectedBoxes = 2;
+    </script>
+
+
+    <!-- Quelle: Frontend-Developer. Funktion: Beispiel von Entscheidungsmüdigkeit -->
+    <script>
+        const images = [];
+        const curioAwake = document.getElementById('curio-awake');
+        const curioAsleep = document.getElementById('curio-asleep');
+        const leftBox = document.getElementById('leftBox');
+        const rightBox = document.getElementById('rightBox');
+        const leftImage = leftBox.querySelector('img');
+        const leftText = leftBox.querySelector('p');
+        const rightImage = rightBox.querySelector('img');
+        const rightText = rightBox.querySelector('p');
+        const progressBarInner = document.getElementById('progressBar');
+        const progressBarOpposite = document.getElementById('oppositeBar');
+
+        let innerProgress = 100;
+        let currentIndex = 0;
+
+        fetch('json/images.json')
+            .then(response => response.json())
+            .then(data => {
+                images.push(data);
+            })
+            .catch(error => console.error('Fehler beim Laden der JSON-Datei:', error));
+
+        curioAsleep.style.display = "none";
+
+        function updateBoxes() {
+
+            if (currentIndex < images[0].length) {
+                const entry = images[0][currentIndex];
+
+
+                leftImage.src = entry.imageSrc1;
+                leftText.textContent = entry.text1;
+                rightImage.src = entry.imageSrc2;
+                rightText.textContent = entry.text2;
+
+                // Index erhöhen, um die Position im Array fortzusetzen
+                currentIndex++;
+
+                innerProgress -= 20;
+                progressBarInner.style.height = `${innerProgress}%`;
+                progressBarOpposite.style.height = `${100 - innerProgress}%`;
+            } else {
+                leftBox.style.visibility = "hidden";
+                rightBox.style.visibility = "hidden";
+                curioAwake.style.visibility = "hidden";
+                curioAsleep.style.display = "block";
+                progressBarInner.style.height = '0%';
+                progressBarOpposite.style.height = '100%';
+            }
+        }
+
+
+        const train = document.querySelector('#trainAnimation');
+
+        function startTrain(entries, observer) {
+            entries.forEach(entry => {
+                train.play();
+                train.setLooping(true);
+                train.resize();
+            });
+        };
+
+        const options = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.5
+        };
+
+        const observerTrain = new IntersectionObserver(startTrain, options);
+        observerTrain.observe(train);
+    </script>
+
+</body>
+
+
+</html>

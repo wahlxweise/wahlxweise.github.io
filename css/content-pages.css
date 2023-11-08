@@ -1,0 +1,1857 @@
+/* colors */
+:root {
+  --primary-bg-color: #F5ECDF;
+  --secondary-bg-color: #ffffff;
+
+  --main-fg-color: #242427;
+}
+
+/* fonts */
+
+.nav-box-link {
+  text-decoration: none;
+  color: var(--main-fg-color);
+  position: relative;
+}
+
+a.nav-box-link {
+  font-size: 16px;
+  pointer-events: visible;
+  cursor: pointer;
+}
+
+.nav-box-link.active::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--main-fg-color);
+}
+
+/* Ausnahmen */
+.hero-banner {
+  height: 85vh !important;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.navbar {
+  position: absolute !important;
+}
+
+.fs-16 {
+  font-size: 16px !important;
+}
+
+.fs-14 a {
+  font-size: 14px !important;
+}
+
+/* Ausnahmen */
+.single-section {
+  height: 100vh;
+}
+
+.arrow-right {
+  position: absolute;
+  height: 6%;
+  cursor: pointer;
+  padding-top: 1.4rem;
+}
+
+.quellen-header h2 {
+  font-size: 36px;
+  margin: 0;
+  padding-bottom: 0rem !important;
+}
+
+h2 {
+  width: 20vw;
+}
+
+.paradox-headline {
+  padding-bottom: 0 !important;
+}
+
+/* Nav-Box */
+
+.nav-box-container {
+  width: 80%;
+  max-width: 400px;
+  z-index: 200;
+}
+
+.nav-box {
+  border: 1px solid var(--main-fg-color);
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+  border-radius: 2px;
+
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+}
+
+.vertical-buffer {
+  padding-top: 2.5rem;
+}
+
+/* Quellen */
+
+.quellen {
+  position: relative;
+  height: 80px;
+  border-top: 1px solid var(--main-fg-color);
+  overflow: hidden;
+  transition: height 0.3s;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.quellen-container {
+  width: 65vw;
+}
+
+.quellen-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  height: 80px;
+
+}
+
+.quellen-arrow {
+  height: 20%;
+  transition: transform 0.5s;
+  margin-left: auto;
+
+}
+
+.quellen-content {
+  width: 65vw;
+  padding-bottom: 10px;
+}
+
+.expanded {
+  height: auto;
+}
+
+.quellen-arrow.up {
+  transform: rotate(180deg);
+}
+
+.reference {
+  font-size: 0.8em;
+  vertical-align: super;
+  line-height: normal;
+}
+
+/* Content */
+
+.all-articles {
+  position: relative;
+  width: 100%;
+}
+
+
+.article-container {
+  position: absolute;
+  width: 0%;
+  top: 0;
+  right: 0;
+  height: auto;
+
+  display: none;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+
+  z-index: 0;
+  background-color: var(--primary-bg-color);
+  overflow: visible;
+  border-left: 1px solid var(--main-fg-color);
+}
+
+#article-container-0 {
+  display: flex;
+}
+
+.article {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: auto !important;
+  flex-direction: row;
+  max-width: 65%;
+}
+
+#article-container-0 {
+  width: 100%;
+  position: relative;
+}
+
+.absatz {
+  min-height: 55vh;
+  margin-bottom: 5vh !important;
+}
+
+.text,
+.article-headline {
+  padding-top: 15rem;
+}
+
+.nav-box-link {
+  align-self: center;
+}
+
+.beispiel-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120vh;
+  width: 100%;
+  margin: 0;
+}
+
+/* Circle */
+.circle-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+}
+
+.circle-section h2 {
+  z-index: 50;
+  text-align: center;
+  width: 40vw !important;
+  padding-bottom: 120px;
+}
+
+.circle-icon-container {
+  width: 65vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 1px solid var(--main-fg-color);
+  margin: calc(100px / 2 + 0px);
+
+  z-index: 150;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  transform-origin: center;
+  transform: translate(-50%, -50%);
+
+
+  border-radius: 50%;
+  padding: 2px;
+}
+
+
+.circle-element img {
+  width: 50px;
+  height: 50px;
+  padding-bottom: 0.5rem;
+}
+
+.circle-element span {
+  font-size: 10px;
+  text-align: center;
+}
+
+.circle .circle-element {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  margin: calc(-100px / 2);
+  cursor: pointer;
+}
+
+.hidden-box {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+  flex-direction: column;
+}
+
+.hidden-box h3 {
+  text-align: center;
+}
+
+.circle .hidden-box p {
+  width: 240px !important;
+  height: auto;
+  padding: 0 10px !important;
+}
+
+
+/* Values Beispiel */
+
+.beispiel-values {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80vh;
+  width: 65%;
+}
+
+.left-side {
+  border-right: 1px solid var(--main-fg-color);
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column-paradox {
+  display: flex;
+  flex-direction: column;
+}
+
+.small-box.paradox {
+  transition: transform 0.3s ease;
+  margin-bottom: 10px !important;
+}
+
+.remove-class {
+  animation: remove-animation 0.3s ease;
+}
+
+@keyframes remove-animation {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+}
+
+.box-values {
+  width: 15vw;
+  border: 1px solid var(--main-fg-color);
+  padding: 80px 20px;
+  border-radius: 2px;
+}
+
+.small-box {
+  width: calc(40vw / 4 - 10px);
+  height: 70px;
+  border: 1px solid var(--main-fg-color);
+  padding: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.small-box:nth-child(4n) {
+  margin-right: 0;
+}
+
+.small-box:hover {
+  background-color: rgba(36, 36, 39, 0.1);
+}
+
+.small-box.clicked {
+  background-color: rgba(36, 36, 39, 0.2);
+}
+
+.small-box.max-selected {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+
+/* Paradox of Choice - Beispiel */
+
+.beispiel-paradox,
+.beispiel-hats,
+.beispiel-10,
+.beispiel-pc {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 65%;
+}
+
+.beispiel-hats h2 {
+  width: 40vw;
+  padding-bottom: 0px !important;
+}
+
+.beispiel-paradox {
+  height: 70vh;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.box-aufgabenstellung {
+  width: 40vw;
+  border: 1px solid var(--main-fg-color);
+  padding: 20px 80px;
+  border-radius: 2px;
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.df>.box-aufgabenstellung {
+  margin-bottom: 1rem;
+}
+
+.paradox {
+  width: calc(55vw / 5 - 10px) !important;
+  height: 40px !important;
+  margin-right: 30px !important;
+  margin-bottom: 0px !important;
+}
+
+.paradox:nth-child(5n) {
+  margin-right: 0 !important;
+}
+
+/* Six Hat Method */
+
+.speech-bubble {
+  position: relative;
+  border: 1px solid var(--main-fg-color);
+  border-radius: 100px;
+  padding: 20px;
+  width: 47vw;
+  height: 8vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bubble-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 5vh;
+}
+
+.bubble {
+  position: relative;
+  border: 1px solid var(--main-fg-color);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.hat-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.hat-box {
+  text-align: center;
+  margin: 0 25px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.hat-box .circle-element {
+  transform: none !important;
+  border-radius: none;
+}
+
+
+.hat-box img {
+  width: 60px;
+  height: 60px;
+  padding-bottom: 0.5rem;
+}
+
+.hat-box p {
+  text-align: center;
+  width: 100px;
+}
+
+.beispiel-hats {
+  height: 55vh;
+}
+
+/* Beispiel 10 / 10 / 10 */
+
+.beispiel-10-tabelle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.beispiel-10-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  width: 60%;
+  border-bottom: 1px solid var(--main-fg-color);
+  padding: 22px 0;
+}
+
+.beispiel-10-row:last-child {
+  border-bottom: none;
+}
+
+.beispiel-10-row img {
+  width: 90px;
+  height: 90px;
+}
+
+.beispiel-10-headline {
+  padding: 0 5vw;
+}
+
+.beispiel-10 {
+  height: 55vh;
+}
+
+/* ICE Beispiel */
+
+table {
+  width: 100%;
+  margin: 0;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  border: 1px solid var(--main-fg-color);
+  padding: 10px;
+}
+
+table th:first-child,
+table td:first-child {
+  border-left: none;
+}
+
+table th:last-child,
+table td:last-child,
+table th:nth-child(2),
+table th:nth-child(3) {
+  border-right: none;
+}
+
+table th:nth-child(3),
+table th:nth-child(4) {
+  border-left: none;
+}
+
+table th {
+  border-top: none;
+}
+
+table td {
+  height: 10vh;
+}
+
+/* Ausschlussverfahren Beispiel - im html code selbst stehen ebenfalls einige styles */
+.box-counter {
+  width: fit-content !important;
+  align-self: flex-end;
+}
+
+.iceIllustration {
+  width: 100%;
+  height: 20vh;
+  visibility: hidden;
+}
+
+#fiveHatCurio{
+  scale: 0.9;
+}
+
+.icecream {
+  scale: 0.4;
+}
+
+.vh-120 {
+  height: 120vh !important;
+}
+
+/* Pro Contra Beispiel */
+
+.placeholder {
+  opacity: 0.8;
+  font-family: "textfont-italic";
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.table-pc,
+th,
+td {
+  /* border-bottom: 1px solid var(--main-fg-color); */
+  text-align: center;
+}
+
+th,
+td {
+  padding: 10px;
+}
+
+.table-pc td {
+  height: 35px;
+}
+
+.idea-pc {
+  width: 80%;
+}
+
+.table-text,
+.table-score {
+  font-family: "textfont", Arial, sans-serif;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 1.125rem;
+  color: var(--main-fg-color);
+  text-decoration: none;
+}
+
+.table-text {
+  text-align: center;
+  font-size: 1rem;
+  background: none;
+  border: none;
+}
+
+.table-score {
+  text-align: center;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  width: 50%;
+}
+
+/* Illustrationen */
+
+.train {
+  position: relative;
+  height: auto;
+  width: 100%;
+  animation: moveTrain 18s linear infinite;
+  margin-bottom: 4.9vh;
+  scale: 0.8;
+}
+
+.train-container {
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+@keyframes moveTrain {
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+.curious-curio {
+  position: relative;
+  height: auto;
+  scale: 0.75;
+
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.sunken-cost {
+  scale: 0.75;
+}
+
+/* Container für das Layout */
+.df-interactive {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 45vw;
+}
+
+/* Stil für die seitlichen Div-Boxen */
+.side-box {
+  width: 20%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Stil für das zentrale Bild und das benachbarte Kästchen */
+
+.center-box {
+  position: relative;
+  width: 25%;
+  height: 25vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.curio-box {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 25vh;
+  width: 20vw;
+}
+
+.curio {
+  position: absolute;
+  max-width: 100%;
+}
+
+.side-box img {
+  max-width: 100%;
+}
+
+
+.stamina-bar-outer {
+  border: 1px solid var(--main-fg-color);
+  border-radius: 2px;
+  width: 16px;
+  height: 65px;
+  margin-left: 10px
+}
+
+.stamina-bar-inner {
+  background-color: var(--main-fg-color);
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  transition: height 0.3s ease;
+  animation-direction: reverse;
+}
+
+.stamina-bar-opposite {
+  width: 100%;
+  height: 0%;
+  bottom: 0;
+  left: 0;
+  transition: height 0.3s ease;
+  animation-direction: reverse;
+}
+
+.mobile {
+  display: none;
+}
+
+.verschieben {
+  transform: translateX(80px);
+}
+
+
+/* Kleinere Bildschirme */
+@media only screen and (max-width: 1550px) and (orientation: landscape) {
+
+  .text,
+  .article-headline {
+    padding-top: 8rem;
+  }
+
+  h2 {
+    width: 22vw;
+  }
+
+  .sunken-cost {
+    max-width: 65%;
+
+  }
+
+  .scale-08,
+  .analysis {
+    scale: 0.8;
+  }
+}
+
+/* Media Query für Retina-Displays mit hoher Auflösung */
+@media only screen and (max-width: 1400px) and (orientation: landscape) {
+
+  h2 {
+    width: 25vw;
+  }
+
+
+  .hero-banner,
+  #gradient-canvas-origins,
+  #gradient-canvas-reasons {
+    height: 80vh !important;
+  }
+
+
+  .article {
+    max-width: 80%;
+  }
+
+  .absatz {
+    height: 60vh;
+  }
+
+  .buffer {
+    min-width: 140px;
+  }
+
+  .verschieben {
+    transform: translateX(0px);
+  }
+
+  .inner-single-content-container,
+  .beispiel-values,
+  .beispiel-paradox,
+  .beispiel-hats,
+  .beispiel-10,
+  .beispiel-pc {
+    width: 80%;
+  }
+
+  /* Quellen */
+  .quellen-container {
+    width: 80vw;
+  }
+
+  .minwidth45 {
+    min-width: 45vw;
+  }
+
+  /* Beispiele */
+  /*+++++++++++++++++++++++ Origins IPad Pro Beispiele +++++++++++++++++++++++*/
+  .box-values {
+    width: 20vw;
+  }
+
+  .left-side {
+    width: 32vw;
+    padding-right: 30px;
+  }
+
+  .right-side {
+    margin-left: 30px;
+  }
+
+  .small-box {
+    width: calc(53vw / 4 - 10px);
+  }
+
+  /*+++++++++++++++++++++++ Reasons IPad Pro Beispiele +++++++++++++++++++++++*/
+
+  .paradox {
+    width: calc(70vw / 5 - 10px) !important;
+  }
+
+  .left-side {
+    width: 32vw;
+    padding-right: 0px;
+  }
+
+  /* biases */
+  .sunken-cost {
+    max-width: 80%;
+    height: 70vh;
+
+  }
+
+  .curious-curio {
+    scale: 0.7;
+    width: 117%;
+  }
+
+  .train {
+    scale: 1;
+  }
+
+  .train-container {
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .analysis {
+    scale: 0.8;
+  }
+
+  /*+++++++++++++++++++++++ Methods IPad Pro Beispiele +++++++++++++++++++++++*/
+
+  .speech-bubble {
+    width: 60vw;
+  }
+
+  .beispiel-10-tabelle {
+    width: 70vw;
+  }
+
+  /*+++++++++++++++++++++++ Tipps IPad Pro Beispiele +++++++++++++++++++++++*/
+  .beispiel-4070 .svg-container {
+    width: 70%;
+  }
+
+  .scale-08 {
+    scale: 0.8;
+  }
+
+}
+
+/* Tablett landscape*/
+@media only screen and (min-width: 769px) and (max-width: 1100px) and (orientation: landscape) {
+
+  .text,
+  .article-headline {
+    padding-top: 10rem;
+  }
+
+  .article {
+    max-width: 90% !important;
+  }
+
+  .buffer {
+    min-width: 10px;
+  }
+
+  .inner-single-content-container,
+  .beispiel-values,
+  .beispiel-pc,
+  .beispiel-10 {
+    width: 90%;
+  }
+
+  .inner-single-content-container p,
+  .arrow-right {
+    padding-left: 25px !important;
+  }
+
+  h2 {
+    width: 35vw !important;
+  }
+
+  .center h2 {
+    width: 45vw !important;
+  }
+
+  .absatz {
+    height: auto;
+    padding-bottom: 10vh !important;
+    padding-left: 25px !important;
+  }
+
+  .box-aufgabenstellung {
+    width: 50vw;
+  }
+
+  .paradox {
+    width: calc(75vw / 5 - 10px) !important;
+  }
+
+  .quellen-container {
+    width: 90vw;
+  }
+
+  .vh-120 {
+    height: 120vh !important;
+  }
+
+  /*+++++++++++++++++++++++ Reasons IPad Beispiele +++++++++++++++++++++++*/
+  /* Auswahlparadox */
+  .box-values {
+    width: 25vw;
+  }
+
+  .left-side {
+    width: 32vw;
+    padding-right: 0px;
+  }
+
+  /* biases */
+
+  .curious-curio {
+    scale: 0.65;
+    width: 140%;
+  }
+
+  .train {
+    scale: 1.2;
+  }
+
+  /*+++++++++++++++++++++++ Methods IPad Beispiele +++++++++++++++++++++++*/
+
+  .speech-bubble {
+    width: 68vw;
+    height: 9vh;
+  }
+
+  /*+++++++++++++++++++++++ Tipps IPad Beispiele +++++++++++++++++++++++*/
+
+  .beispiel-4070 .svg-container {
+    width: 75%;
+  }
+
+  .scale-08 {
+    scale: 0.8;
+  }
+
+}
+
+/* Tablett portrait */
+@media only screen and (max-width: 1050px) and (orientation: portrait) {
+  /* 768 / 769 */
+
+  .verschieben {
+    transform: translateX(0px);
+  }
+
+  .absprungSection {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+  }
+
+  .article {
+    flex-direction: column !important;
+    max-width: 70% !important;
+  }
+
+  .single-content-container {
+    height: 65vh;
+  }
+
+  .text {
+    padding-top: 1.25rem;
+  }
+
+  .article-headline {
+    padding-top: 8rem;
+    position: relative !important;
+  }
+
+  .absatz {
+    height: auto;
+    padding-bottom: 3vh !important;
+  }
+
+  .inner-single-content-container {
+    flex-direction: column;
+    width: 75%;
+  }
+
+  .arrow-right {
+    padding-top: 2.4rem;
+  }
+
+  /* Header */
+  .hero-content {
+    padding-bottom: 10% !important;
+  }
+
+  .arrow {
+    bottom: -4% !important;
+  }
+
+  /* Quellen */
+
+  .quellen-header h2 {
+    font-size: 33px;
+  }
+
+  .quellen-container,
+  .quellen-content {
+    width: 90vw;
+  }
+
+  .quellen-arrow {
+    height: 15%;
+  }
+
+  .circle-section h2 {
+    width: 75vw !important;
+    padding-bottom: 55px;
+  }
+
+  /* Circle Beispiel */
+
+  .circle {
+    scale: 0.8;
+  }
+
+  .circle-element .fs-16,
+  .circle p {
+    font-size: 20px !important;
+  }
+
+  .speech-bubble p {
+    font-size: 15px !important;
+  }
+
+  .speech-bubble .hidden-box {
+    width: 84% !important;
+    height: auto;
+  }
+
+  .speech-bubble .hidden-box p {
+    width: 70vw !important;
+    height: auto;
+    padding: 0 10px !important;
+  }
+
+  .circle-element img {
+    width: 65px;
+    height: 65px;
+  }
+
+  .hidden-box h3 {
+    font-size: 26px !important;
+  }
+
+  .circle .hidden-box p {
+    width: 65vw !important;
+    height: auto;
+    padding: 0 10px !important;
+  }
+
+  /* Values Beispiel */
+
+  .beispiel-values,
+  .beispiel-paradox,
+  .beispiel-hats,
+  .beispiel-10 {
+    height: 100%;
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-side {
+    min-width: 90%;
+    border-right: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 6vh 0;
+  }
+
+  .left-side h2 {
+    text-align: center;
+  }
+
+  .box-values {
+    width: 90%;
+  }
+
+  .row {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0 10px;
+  }
+
+  .small-box {
+    width: 40vw;
+    height: 70px;
+
+    padding: 5px;
+    margin-right: 0px;
+  }
+
+  .beispiel-section {
+    height: auto !important;
+    margin: 10vh 0;
+  }
+
+
+  #beispiel-section-values .radial-gradient-container {
+    height: 100vh;
+  }
+
+  /* Nav Box */
+  .nav-box-container {
+    width: 70%;
+    overflow-x: hidden;
+  }
+
+  .nav-box .fs-16 {
+    font-size: 11px !important;
+    max-width: 70px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+
+  /*+++++++++++++++++++++++ Reasons IPad Portrait Beispiele +++++++++++++++++++++++*/
+
+  .sunken-cost {
+    scale: 0.7 !important;
+  }
+
+  .curious-curio {
+    scale: 0.65;
+    width: 111%;
+  }
+
+  .beispiel-paradox,
+  .beispiel-hats,
+  .beispiel-10,
+  .beispiel-pc {
+    width: 90%;
+  }
+
+  .bandwagonBsp {
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+    height: auto !important;
+    margin: 0 0 10vh 0;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .train {
+    scale: 1.5;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+  }
+
+  .train-container {
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .df-interactive {
+    width: 70vw;
+  }
+
+  .analysis {
+    scale: 0.7;
+  }
+
+  .stamina-bar-outer {
+    width: 12px;
+    margin-top: 80px;
+    margin-left: 20px;
+  }
+
+  .side-box img {
+    padding-bottom: 12px;
+  }
+
+  .paradox {
+    width: 32vw !important;
+    height: 40px !important;
+    margin-right: 0px !important;
+  }
+
+  .paradox:nth-child(3n) {
+    margin-right: 0px !important;
+  }
+
+  .box-aufgabenstellung {
+    width: 90%;
+    padding: 50px 20px;
+  }
+
+  /*+++++++++++++++++++++++ Methods IPad Portrait Beispiele +++++++++++++++++++++++*/
+  /* 6 hats */
+  .hat-container {
+    width: 90vw;
+    flex-wrap: wrap;
+  }
+
+  .hat-box {
+    width: 25vw;
+    margin: 0 0px;
+    padding-bottom: 5vh;
+  }
+
+  .bubble-container {
+    display: none;
+  }
+
+  .speech-bubble {
+    border-radius: 200px;
+    padding: 0px;
+    width: 70vw;
+    min-height: 15vh;
+    margin: 7vh 0;
+  }
+
+  .speech-bubble .hidden-box {
+    width: 100%;
+    height: auto;
+  }
+
+  .hidden-box p {
+    width: 70vw !important;
+    height: auto;
+  }
+
+  /* 10 / 10 / 10 */
+  .beispiel-10-row h3 {
+    scale: 1;
+    padding: 0 3vw;
+  }
+
+  .beispiel-10-row img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .beispiel-10-row {
+    padding: 16px 0;
+    width: 65vw;
+  }
+
+  .beispiel-10-tabelle {
+    width: 70vw;
+  }
+
+  /* pro kontra */
+
+  .table-pc td {
+    height: 65px;
+  }
+
+  .table-h3 {
+    font-size: 22px;
+    margin: 0;
+    padding-bottom: 0.5rem;
+  }
+
+  /* ice */
+
+  .ice-table-h3 {
+    font-size: 20px;
+    margin: 0;
+    padding-bottom: 0.5rem;
+  }
+
+  table td {
+    height: 4vh;
+  }
+
+  .ice-input-mobile {
+    width: 100%;
+  }
+
+  tr:nth-child(1) td:nth-child(1),
+  tr:nth-child(1) td:nth-child(2) {
+    border-top: none;
+  }
+
+  tr:nth-child(1) td:nth-child(1),
+  tr:nth-child(1) td:nth-child(2) {
+    border-top: none;
+  }
+
+  tr:nth-child(5) td:nth-child(1),
+  tr:nth-child(5) td:nth-child(2) {
+    border-bottom: none;
+  }
+
+  /* ausschlussverfahren */
+
+  .paradox-headline {
+    padding-bottom: 1.25rem !important;
+  }
+
+  .row-paradox {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .row-paradox .small-box:nth-child(1),
+  .row-paradox .small-box:nth-child(3) {
+    margin-right: 10px !important;
+  }
+
+  /*+++++++++++++++++++++++ Tipps IPad Portrait Beispiele +++++++++++++++++++++++*/
+
+  /* 40 / 70 */
+  .beispiel-4070 .svg-container {
+    width: 70%;
+  }
+
+  .scale-08 {
+    scale: 0.8;
+  }
+
+
+  /* Navbar mobile */
+
+  .fs-14 a,
+  a.nav-box-link {
+    font-size: 14px !important;
+  }
+
+}
+
+/* Mobile portrait*/
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+  /* 768 / 769 */
+
+  .hidden {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+  }
+
+  .article {
+    flex-direction: column !important;
+    max-width: 90% !important;
+  }
+
+  .single-content-container {
+    height: 100vh;
+  }
+
+  .text {
+    padding-top: 1.25rem;
+  }
+
+  .article-headline {
+    padding-top: 5rem;
+    position: relative !important;
+  }
+
+  .absatz {
+    height: auto;
+    padding-bottom: 3vh !important;
+  }
+
+  .inner-single-content-container {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .arrow-right {
+    padding-top: 2.4rem;
+  }
+
+  /* Header */
+  .hero-content {
+    padding-bottom: 10% !important;
+  }
+
+  .arrow {
+    bottom: -4% !important;
+  }
+
+  .circle-section h2 {
+    width: 90vw !important;
+    padding-bottom: 18px;
+  }
+
+  /*+++++++++++++++++++++++ Origins Iphone Beispiele +++++++++++++++++++++++*/
+  /* Circle Beispiel */
+
+  .circle {
+    scale: 0.6;
+  }
+
+  /* Nav Box */
+  .nav-box-container {
+    width: 90%;
+    overflow-x: hidden;
+  }
+
+  /*+++++++++++++++++++++++ Reasons Iphone Beispiele +++++++++++++++++++++++*/
+
+  .sunken-cost {
+    scale: 1 !important;
+  }
+
+  .beispiel-paradox,
+  .beispiel-hats,
+  .beispiel-10,
+  .beispiel-pc {
+    width: 90%;
+  }
+
+  .train-container{
+    width: 100vw !important;
+    overflow: hidden;
+  }
+
+  .train {
+    scale: 2.6;
+    margin-top: 0vh;
+    margin-bottom: 3vh;
+  }
+
+
+  .curious-curio {
+    scale: 0.5;
+    width: 177%;
+  }
+
+
+  .df-interactive {
+    width: 90vw;
+  }
+
+  .analysis {
+    scale: 1;
+  }
+
+  .paradox {
+    width: 37vw !important;
+    height: 40px !important;
+    margin-right: 0px !important;
+  }
+
+  .paradox:nth-child(3n) {
+    margin-right: 0px !important;
+  }
+
+  .box-aufgabenstellung {
+    width: 90%;
+    padding: 50px 20px;
+  }
+
+  /*+++++++++++++++++++++++ Methods Iphone Beispiele +++++++++++++++++++++++*/
+  /* 6 hats */
+  .hat-container {
+    width: 90vw;
+    flex-wrap: wrap;
+  }
+
+  .hat-box {
+    width: 30vw;
+    margin: 0 0px;
+    padding-bottom: 5vh;
+  }
+
+  .bubble-container {
+    display: none;
+  }
+
+  .speech-bubble {
+    border-radius: 200px;
+    padding: 0px;
+    width: 90vw;
+    min-height: 25vh;
+    margin: 7vh 0;
+  }
+
+  .speech-bubble .hidden-box {
+    width: 100%;
+    height: auto;
+  }
+
+  .hidden-box p {
+    width: 85vw !important;
+    height: auto;
+  }
+
+  /* 10 / 10 / 10 */
+  .beispiel-10-row h3 {
+    scale: 0.8;
+    padding: 0 3vw;
+  }
+
+  .beispiel-10-row img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .beispiel-10-row {
+    padding: 16px 0;
+  }
+
+  .beispiel-10-row {
+    width: 90vw;
+  }
+
+  /* ice */
+
+  .ice-table-h3 {
+    font-size: 20px;
+    margin: 0;
+    padding-bottom: 0.5rem;
+  }
+
+  table td {
+    height: 10vh;
+  }
+
+  /*+++++++++++++++++++++++ Tipps Iphone Beispiele +++++++++++++++++++++++*/
+
+  /* 40 / 70 */
+  .beispiel-4070 .svg-container {
+    width: 90%;
+  }
+
+  .frog {
+    width: 75% !important;
+  }
+
+  .scale-08 {
+    scale: 1;
+  }
+
+  /* Navbar mobile */
+
+  .fs-14 a,
+  a.nav-box-link {
+    font-size: 14px !important;
+  }
+
+}
+
+/* Mobile landscape*/
+@media only screen and (max-width: 900px) and (orientation: landscape) {
+
+  .hidden {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+  }
+
+  .hero-banner,
+  #gradient-canvas-origins,
+  #gradient-canvas-reasons {
+    height: 100vh !important;
+  }
+
+  .nav-box {
+    padding: 7px;
+  }
+
+  .vertical-buffer {
+    padding-top: 1.5rem;
+  }
+
+  a.nav-box-link {
+    font-size: 14px;
+  }
+
+  .quellen-header h2 {
+    font-size: 30px;
+  }
+
+  .article {
+    max-width: 85% !important;
+  }
+
+  /*+++++++++++++++++++++++ Origins Iphone Landscape Beispiele +++++++++++++++++++++++*/
+  /* Origins */
+  .beispiel-section,
+  .circle-section {
+    height: 150vh;
+    margin: 20vh 0;
+  }
+
+  .circle {
+    scale: 0.6;
+  }
+
+  .circle-section h2 {
+    padding-bottom: 2px;
+  }
+
+  .single-content-container {
+    height: 120vh;
+    margin-bottom: 20vh;
+  }
+
+
+  /*+++++++++++++++++++++++ Reaons Iphone Landscape Beispiele +++++++++++++++++++++++*/
+
+  .box-values {
+    padding: 60px 20px;
+  }
+
+  .paradox {
+    width: calc(85vw / 5 - 10px) !important;
+    height: 30px !important;
+    margin-right: 20px !important;
+  }
+
+  .curious-curio {
+    scale: 0.55;
+    width: 159%;
+  }
+
+  .analysis {
+    scale: 0.5;
+  }
+
+  /*+++++++++++++++++++++++ Reaons Iphone Landscape Beispiele +++++++++++++++++++++++*/
+
+  /* 6 hats */
+  .hat-container {
+    width: 90vw;
+    flex-wrap: wrap;
+  }
+
+  .hat-box {
+    width: 30vw;
+    margin: 0 0px;
+    padding-bottom: 5vh;
+  }
+
+  .bubble-container {
+    display: none;
+  }
+
+  .speech-bubble {
+    border-radius: 200px;
+    padding: 0px;
+    width: 70vw;
+    min-height: 25vh;
+    margin: 7vh 0;
+  }
+
+  .speech-bubble .hidden-box {
+    width: 100%;
+    height: auto;
+  }
+
+  .hidden-box p {
+    width: 70vw !important;
+    height: auto;
+    /* padding: 0 10px !important; */
+  }
+
+  .vh-120 {
+    height: 220vh !important;
+  }
+
+  .ice-input-mobile {
+    width: 80vw;
+  }
+
+  .column-paradox .hidden {
+    display: block !important;
+  }
+
+  /*+++++++++++++++++++++++ Tipps Iphone Beispiele +++++++++++++++++++++++*/
+
+  /* 40 / 70 */
+  .beispiel-4070 .svg-container {
+    width: 80%;
+  }
+
+
+  .scale-08 {
+    scale: 0.6;
+  }
+
+}

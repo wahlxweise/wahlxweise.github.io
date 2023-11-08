@@ -1,0 +1,265 @@
+[
+    {
+      "question": "Wähle eins der folgenden Optionen aus",
+      "answer": ["Schwarz", "Weiß"],
+      "difficulty": 0
+    },
+    {
+      "question": "Wähle eins der folgenden Optionen aus",
+      "answer": ["Norden", "Süden"],
+      "difficulty": 0
+    },
+    {
+      "question": "Wähle eins der folgenden Optionen aus",
+      "answer": ["Sonne", "Mond"],
+      "difficulty": 0
+    },
+    {
+      "question": "Wähle eins der folgenden Optionen aus",
+      "answer": ["Links", "Rechts"],
+      "difficulty": 0
+    },
+    {
+      "question": "Wähle eins der folgenden Optionen aus",
+      "answer": ["Richtig", "Falsch"],
+      "difficulty": 0
+    },
+    {
+      "question": "Wähle eins der folgenden Optionen aus",
+      "answer": ["Anfang", "Ende"],
+      "difficulty": 0
+    },
+    {
+      "question": "Wähle eins der folgenden Optionen aus",
+      "answer": ["Morgengrauen", "Abenddämmerung"],
+      "difficulty": 0
+    },
+    {
+      "question": "Wähle eins der folgenden Optionen aus",
+      "answer": ["Kopf", "Zahl"],
+      "difficulty": 0
+    },
+    {
+      "question": "Wähle eins der folgenden Optionen aus",
+      "answer": ["Feuer", "Eis"],
+      "difficulty": 0
+    },
+    {
+      "question": "Wähle eins der folgenden Optionen aus",
+      "answer": ["Zukunft", "Vergangenheit"],
+      "difficulty": 0
+    },
+
+
+
+
+    {
+        "question": "Welche der folgenden Optionen bevorzugst du?",
+        "answer": ["Sommer", "Winter"],
+        "difficulty": 1
+      },
+      {
+        "question": "Welche der folgenden Optionen bevorzugst du?",
+        "answer": ["Herbst", "Frühling"],
+        "difficulty": 1
+      },
+      {
+        "question": "Welche der folgenden Optionen bevorzugst du?",
+        "answer": ["Katze", "Hund"],
+        "difficulty": 1
+      },
+      {
+        "question": "Welche der folgenden Optionen bevorzugst du?",
+        "answer": ["Schoko Eis", "Vanille Eis"],
+        "difficulty": 1
+      },
+      {
+        "question": "Welche der folgenden Optionen bevorzugst du?",
+        "answer": ["Süß", "Salzig"],
+        "difficulty": 1
+      },
+      {
+        "question": "Welche der folgenden Optionen bevorzugst du?",
+        "answer": ["Kaffee", "Tee"],
+        "difficulty": 1
+      },
+      {
+        "question": "Welche der folgenden Optionen bevorzugst du?",
+        "answer": ["Meer", "Berge"],
+        "difficulty": 1
+      },
+      {
+        "question": "Welche der folgenden Optionen bevorzugst du?",
+        "answer": ["Obst", "Gemüse"],
+        "difficulty": 1
+      },
+      {
+        "question": "Welche der folgenden Optionen bevorzugst du?",
+        "answer": ["Stadt", "Land"],
+        "difficulty": 1
+      },
+      {
+        "question": "Welche der folgenden Optionen bevorzugst du?",
+        "answer": ["Waffeln", "Crêpe"],
+        "difficulty": 1
+      },
+
+
+
+    {
+      "question": "Welche der folgenden Optionen würdest du lieber tun können?",
+      "answer": ["Augenfarbe wechseln", "Haarfarbe wechseln"],
+      "difficulty": 2
+    },
+    {
+      "question": "Welche der folgenden Optionen würdest du lieber tun können?",
+      "answer": ["Unter Wasser atmen", "Durch die Luft fliegen"],
+      "difficulty": 2
+    },
+    {
+      "question": "Welche der folgenden Optionen würdest du lieber tun können?",
+      "answer": ["jede Lüge, die du hörst, erkennen", "mit jeder Lüge, die du erzählst, davonkommen"],
+      "difficulty": 2
+    },
+    {
+      "question": "Welche der folgenden Optionen wäre dir lieber?",
+      "answer": ["ein 1.000-jähriges Leben leben", "10 Mal 100 Jahre leben"],
+      "difficulty": 2
+    },
+    {
+      "question": "Welche der folgenden Optionen würdest du lieber tun können?",
+      "answer": ["mit Tieren sprechen zu können", "jede Sprache sprechen zu können "],
+      "difficulty": 2
+    },
+    {
+      "question": "Welche der folgenden Optionen würdest du lieber tun können?",
+      "answer": ["10 Minuten in die Zukunft blicken", "1 Jahr in die Zukunft blicken"],
+      "difficulty": 2
+    },
+    {
+      "question": "Welche der folgenden Optionen würdest du lieber tun können?",
+      "answer": ["100 Jahre in die Vergangenheit reisen ", "100 Jahre in die Zukunft reisen "],
+      "difficulty": 2
+    },
+    {
+      "question": "Welche der folgenden Optionen würdest du lieber tun können?",
+      "answer": ["ein Gespräch mit dir in der Vergangenheit führen", "ein Gespräch mit dir in der Zukunft führen"],
+      "difficulty": 2
+    },
+    {
+      "question": "Welche der folgenden Optionen würdest du lieber tun können?",
+      "answer": ["Fähigkeit Zeit anhalten zu können", "Fähigkeit Zeit zurückspulen zu können"],
+      "difficulty": 2
+    },
+    {
+        "question": "Welche der folgenden Optionen würdest du lieber tun können?",
+        "answer": ["den Weltraum erforschen", "den Ozean erforschen"],
+        "difficulty": 2
+      },
+
+    {
+      "question": "Auf welche der folgenden Optionen könntest du dein Leben lang verzichten?",
+      "answer": ["Sehfähigkeit", "Sprechfähigkeit"],
+      "difficulty": 3
+    },
+    {
+      "question": "Auf welche der folgenden Optionen könntest du dein Leben lang verzichten?",
+      "answer": ["Internet", "Handy"],
+      "difficulty": 3
+    },
+    {
+      "question": "Auf welche der folgenden Optionen könntest du dein Leben lang verzichten?",
+      "answer": ["Geruch", "Geschmack"],
+      "difficulty": 3
+    },
+    {
+      "question": "Auf welche der folgenden Optionen könntest du dein Leben lang verzichten?",
+      "answer": ["Social Media", "Streaming Platformen"],
+      "difficulty": 3
+    },
+    {
+      "question": "Auf welche der folgenden Optionen könntest du dein Leben lang verzichten?",
+      "answer": ["Langzeitgedächtnis", "Kurzzeitgedächtnis"],
+      "difficulty": 3
+    },
+    {
+      "question": "Auf welche der folgenden Optionen könntest du dein Leben lang verzichten?",
+      "answer": ["Wein", "Bier"],
+      "difficulty": 3
+    },
+    {
+      "question": "Auf welche der folgenden Optionen könntest du dein Leben lang verzichten?",
+      "answer": ["Pizza", "Pasta"],
+      "difficulty": 3
+    },
+    {
+      "question": "Auf welche der folgenden Optionen könntest du dein Leben lang verzichten?",
+      "answer": ["Musik", "Filme"],
+      "difficulty": 3
+    },
+    {
+      "question": "Welche der folgenden Optionen würdest du bevorzugen?",
+      "answer": ["nur noch einen Song hören zu können", "nur einen Film sehen zu können"],
+      "difficulty": 3
+    },
+    {
+      "question": "Welche der folgenden Optionen würdest du bevorzugen?",
+      "answer": ["ein Jahr lang ganz allein sein", "ein Jahr lang immer von Menschen umgeben sein"],
+      "difficulty": 3
+    },
+
+
+
+
+    {
+      "question": "Welche der folgenden Optionen ist für dich wichtiger?",
+      "answer": ["materieller Reichtum", "emotionales Wohlbefinden"],
+      "difficulty": 4
+    },
+    {
+      "question": "Welche der folgenden Optionen ist für dich wichtiger?",
+      "answer": ["Zeit", "Geld"],
+      "difficulty": 4
+    },
+    {
+      "question": "Welche der folgenden Optionen ist für dich wichtiger?",
+      "answer": ["Freiheit", "Stabilität"],
+      "difficulty": 4
+    },
+    {
+      "question": "Welche der folgenden Optionen ist für dich wichtiger?",
+      "answer": ["Unabhängigkeit", "soziale Bindungen"],
+      "difficulty": 4
+    },
+    {
+      "question": "Welche der folgenden Optionen ist für dich wichtiger?",
+      "answer": ["Sicherheit", "Abenteuer"],
+      "difficulty": 4
+    },
+    {
+      "question": "Welche der folgenden Optionen ist für dich wichtiger?",
+      "answer": ["Individualität", "Konformität"],
+      "difficulty": 4
+    },
+    {
+      "question": "Welche der folgenden Optionen ist für dich wichtiger?",
+      "answer": ["Kunst", "Wissen"],
+      "difficulty": 4
+    },
+    {
+      "question": "Welche der folgenden Optionen ist für dich wichtiger?",
+      "answer": ["persönliche Entwicklung", "beruflichen Erfolg"],
+      "difficulty": 4
+    },
+    {
+      "question": "Welche der folgenden Optionen ist für dich wichtiger?",
+      "answer": ["Wahrheit", "Mitgefühl"],
+      "difficulty": 4
+    },
+    {
+      "question": "Welche der folgenden Optionen ist für dich wichtiger?",
+      "answer": ["Erfolg", "Zufriedenheit"],
+      "difficulty": 4
+    }
+  ]
+  
